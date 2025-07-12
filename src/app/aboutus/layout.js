@@ -12,7 +12,7 @@ export const metadata = {
   description: "General information about Cyncra Internship program",
 };
 
-const AboutUsLayout = () => {
+const AboutUsLayout = ({children}) => {
   return (
     <>
         <html lang="en"  >
