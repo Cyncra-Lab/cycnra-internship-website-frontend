@@ -1,4 +1,4 @@
-import { ArrowBigRight, ArrowRight } from 'lucide-react';
+import {  ArrowRight } from 'lucide-react';
 import cyncralogo from '../../public/svg/header/cyncralogo.svg'
 import Image from 'next/image';
 
@@ -7,8 +7,8 @@ const Header = () => {
     
   return (
             <>
-            <header className="w-full flex justify-center items-center  h-[120px]">
-                <div className="w-[80%] bg-[#02353C] flex justify-between items-center px-[20px]  h-[80px] rounded-[80px]">
+            <header className="w-full flex justify-center fixed top-0 z-100 items-center  h-[120px]">
+                <div className="w-[90%] bg-[#02353C] flex justify-between items-center px-[20px]  h-[80px] rounded-[80px]">
                     <div>
                         <Image src={cyncralogo} alt="cyncra logo icon"/>
                     </div>

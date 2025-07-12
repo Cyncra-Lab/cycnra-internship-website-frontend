@@ -1,0 +1,35 @@
+import Image from 'next/image'
+import heroimage from '../../public/svg/aboutushero/heroimg.svg'
+import { ArrowRight } from 'lucide-react'
+
+const Aboutushero = () => {
+  return (
+            <>
+            <section className='w-full flex justify-center items-center h-[700px]  mt-[120px] '>
+                <div className='w-[95%] h-[609px] '>
+                    <div className='flex justify-between items-center '>
+                        <div className='w-[800px] h-[408px]  '>
+                            <h1 className='text-[64px] font-normal text-black '>
+                                Our <span className='font-bold text-black leading-[140%] '>Story</span> the Journey That’s Shaped <span className='font-bold leading-[140%]  text-[#FFC857]  '>Our Success</span>
+                            </h1>
+                            <p className='text-[20px] leading-[140%]  tracking-[5%] text-[#02353C] w-[711px] mt-[30px]'>
+                                At Cyncra we’re more than just an internship program, We’re a launchpad for tomorrow’s top tech talents. Our mission is to empower ambitious learners to transform their skills, gain real world experience and break into world class teams.
+
+                            </p>
+                        <button className='w-[234px] mt-[20px] h-[56px] bg-[#FFC857] flex justify-between items-center px-[20px] rounded-[70px] border-0 text-[#02353C] font-bold text-[16px] leading-[140%] -tracking-[2%]'>
+                            Apply Now <ArrowRight size={20} color="black"/>
+                        </button>
+
+                        </div>
+                        <Image src={heroimage} alt='about us hero image' className='w-[540px]'/>
+
+                    </div>
+
+                </div>
+
+            </section>
+            </>
+  )
+}
+
+export default Aboutushero 
