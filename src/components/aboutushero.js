@@ -9,8 +9,8 @@ const Aboutushero = () => {
             <section className='w-full flex flex-col justify-center items-center h-auto  mt-[120px] pb-[50px] '>
                 <div className='w-[95%] h-[609px] '>
                     <div className='flex justify-between items-center '>
-                        <div className='w-[800px] h-[408px]  '>
-                            <h1 className='text-[64px] font-normal text-black '>
+                        <div className='w-[760px] h-[408px]  '>
+                            <h1 className='text-[60px] font-normal text-black '>
                                 Our <span className='font-bold text-[#02353C] leading-[140%] '>Story</span> the Journey That’s Shaped <span className='font-bold leading-[140%]  text-[#FFC857]  '>Our Success</span>
                             </h1>
                             <p className='text-[20px] leading-[140%]  tracking-[5%] text-[#02353C] w-[711px] mt-[30px]'>

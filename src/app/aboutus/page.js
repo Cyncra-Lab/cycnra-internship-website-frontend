@@ -1,5 +1,8 @@
+'use client'
+
 import Aboutushero from "@/components/aboutushero"
 import Header from "@/components/header"
+import Testimonial from "@/components/testimonial"
 import Workflow from "@/components/workflow"
 
 
@@ -10,6 +13,7 @@ const AboutUs = () => {
         <main>
             <Aboutushero/>
             <Workflow/>
+            <Testimonial/>
         </main>
        
         </>
