@@ -29,9 +29,14 @@ const Footer = () => {
 ]
   return (
         <>
-        <section className=" w-full h-[980px] flex font-jakarta flex-col justify-end mt-[50px]">
-          <div className='h-[769px]  bg-[#02353C] relative flex justify-center items-center  w-full '>
-              <Image src={footerimg} alt='a footer image' className='absolute right-[20px] -top-[250px] w-[592px] h-[577px]'/>
+        <section className=" w-full h-[980px]   flex font-jakarta flex-col   justify-end mt-[50px]  ">
+          <div className='w-full h-[240px] bg-[#02353C]   clip-top-curve   '>
+
+          </div>
+
+
+          <div className='h-[769px]  bg-[#02353C]  relative  flex justify-center items-center  w-full '>
+             <Image src={footerimg} alt='a footer image' className='absolute right-[20px] -top-[300px] w-[592px] h-[577px]'/>
               <div className='w-[90%] h-[620px] flex flex-col '>
                 <div className='w-[489px] h-[153px] '>
                   <h1 className=' text-[40px] h-[80px]'>Ready to get started?</h1>
