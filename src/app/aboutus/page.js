@@ -1,10 +1,10 @@
 'use client'
 
 import Footer from "@/components/aboutus/footer"
-import Aboutushero from "@/components/aboutushero"
-import Header from "@/components/header"
-import Testimonial from "@/components/testimonial"
-import Workflow from "@/components/workflow"
+import Aboutushero from "@/components/aboutus/aboutushero"
+import Header from "@/components/aboutus/header"
+import Testimonial from "@/components/aboutus/testimonial"
+import Workflow from "@/components/aboutus/workflow"
 
 
 const AboutUs = () => {

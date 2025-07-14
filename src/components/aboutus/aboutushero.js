@@ -1,7 +1,7 @@
 import Image from 'next/image'
-import heroimage from '../../public/svg/aboutushero/heroimg.svg'
+import heroimage from '../../../public/svg/aboutushero/heroimg.svg'
 import { ArrowRight } from 'lucide-react'
-import Aboutushero2 from './aboutushero2'
+import Aboutushero2 from '../aboutus/aboutushero2'
 
 const Aboutushero = () => {
   return (

@@ -1,4 +1,4 @@
-import caret from '../../public/svg/workflow/CaretRight.svg'
+import caret from '../../../public/svg/workflow/CaretRight.svg'
 import Image from 'next/image'
 const Design = ({frame1,maintext,subtext}) => {
   return (
