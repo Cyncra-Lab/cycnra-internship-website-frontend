@@ -1,14 +1,10 @@
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import { Oxygen } from "next/font/google";
+import "../../styles/globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const oxygen = Oxygen({
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: ["300", "400", "700"],
+  variable: "--font-oxygen",
 });
 
 export const metadata = {
@@ -19,9 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${oxygen.variable} font-oxygen antialiased`}>
         {children}
       </body>
     </html>
