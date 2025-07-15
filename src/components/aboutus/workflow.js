@@ -23,9 +23,9 @@ const Workflow = () => {
                    
 
                      <div className='flex justify-between items-center'>
-                         <div className='h-[258px] w-[106px] text-[#02353C] text-[24px] bg-[#FFC857] py-[100px] px-[18px]  rounded-[50px] '>
+                         <button className='h-[258px] w-[106px] focus:outline-2 outline-white  hover:bg-[#FFC85780] hover:text-[#FFC857] cursor-pointer text-[#02353C] text-[24px] bg-[#FFC857] py-[100px] px-[18px]  rounded-[50px] '>
                                 View Details
-                         </div>
+                         </button>
                        
                         <div className='flex flex-col w-[631px] '>
                             <p className='text-[36px]  leading-[120%]  text-[#E6FAFC]'>

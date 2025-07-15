@@ -19,8 +19,8 @@ const Header = () => {
                         </ul>
                     </nav>
                     <div>
-                        <button className='w-[201px] h-[52px] bg-[#FFC857] flex justify-between items-center px-[15px] rounded-[70px] border-0 text-[#02353C] font-bold text-[16px] leading-[140%] -tracking-[2%]'>
-                            Apply Now <ArrowRight size={20} color="black"/>
+                        <button className='w-[201px] h-[52px] bg-[#FFC857] focus:outline-2 outline-white  hover:bg-[#FFC85780] hover:text-slate-100 text-[#02353C] flex justify-between items-center px-[15px] rounded-[70px] border-0  font-bold text-[16px] leading-[140%] -tracking-[2%]'>
+                            Apply Now <ArrowRight size={20} color="black" />
                         </button>
                     </div>
 

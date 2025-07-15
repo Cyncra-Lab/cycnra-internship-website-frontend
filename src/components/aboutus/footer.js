@@ -7,6 +7,7 @@ import twittericon from '../../../public/svg/footer/Twitter.svg'
 import linkedinicon from '../../../public/svg/footer/Linkedin.svg'
 import dayjs from "dayjs";
 
+
 const Footer = () => {
   const currentYear = dayjs().year();
   const footerdisplay = [
@@ -40,7 +41,7 @@ const Footer = () => {
               <div className='w-[90%] h-[620px] flex flex-col '>
                 <div className='w-[489px] h-[153px] '>
                   <h1 className=' text-[40px] h-[80px]'>Ready to get started?</h1>
-                  <button className='w-[489px] h-[60px] text-[14px] font-medium rounded-[27px] text-[#0A142F] leading-[24px] tracking-[1px] bg-white mt-[12px]'>
+                  <button className='w-[489px] h-[60px] text-[14px] font-medium focus:outline-2 outline-white rounded-[27px] text-[#0A142F] hover:bg-[#0A142F] hover:text-white leading-[24px] tracking-[1px] bg-white mt-[12px]'>
                     KICKSTART YOUR FUTURE
 
                   </button>
@@ -55,7 +56,7 @@ const Footer = () => {
                       </h1>
                       <div className='h-auto flex flex-col gap-[10px]'>
                        {items.subtext.map((text,index) => (
-                       <p key={index} className='font-normal text-[15px]  leading-[30px] text-[#FFFFFF] opacity-80  '>
+                       <p key={index} className={`font-normal text-[15px] ${items.headline !=="What We Do" ? "cursor-pointer  hover:opacity-50  hover:underline": ""}  leading-[30px] text-[#FFFFFF] opacity-80  `}>
                           {text}
                         </p>
                       ))}
