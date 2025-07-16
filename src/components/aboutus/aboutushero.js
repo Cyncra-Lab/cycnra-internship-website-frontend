@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import heroimage from '../../../public/svg/aboutushero/heroimg.svg'
+import heroimage from '../../../public/assets/aboutus/svg/aboutushero/heroimg.svg'
 import { ArrowRight } from 'lucide-react'
 import Aboutushero2 from '../aboutus/aboutushero2'
 

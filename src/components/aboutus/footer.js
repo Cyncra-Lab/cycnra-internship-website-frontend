@@ -1,10 +1,10 @@
 "use client"
 import Image from 'next/image'
-import footerimg from '../../../public/svg/footer/Image.svg'
-import logo from '../../../public/svg/footer/logo.svg'
-import facebookicon from '../../../public/svg/footer/Facebook.svg'
-import twittericon from '../../../public/svg/footer/Twitter.svg'
-import linkedinicon from '../../../public/svg/footer/Linkedin.svg'
+import footerimg from '../../../public/assets/aboutus/svg/footer/Image.svg'
+import logo from '../../../public/assets/aboutus/svg/footer/logo.svg'
+import facebookicon from '../../../public/assets/aboutus/svg/footer/Facebook.svg'
+import twittericon from '../../../public/assets/aboutus/svg/footer/Twitter.svg'
+import linkedinicon from '../../../public/assets/aboutus/svg/footer/Linkedin.svg'
 import dayjs from "dayjs";
 
 

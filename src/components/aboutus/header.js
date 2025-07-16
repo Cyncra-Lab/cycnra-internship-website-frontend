@@ -1,5 +1,5 @@
 import {  ArrowRight } from 'lucide-react';
-import cyncralogo from '../../../public/svg/header/cyncralogo.svg'
+import cyncralogo from '../../../public/assets/aboutus/svg/header/cyncralogo.svg'
 import Image from 'next/image';
 
 const Header = () => {
