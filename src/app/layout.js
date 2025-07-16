@@ -1,4 +1,11 @@
-import "./globals.css";
+import { Oxygen } from "next/font/google";
+import "../../styles/globals.css";
+
+const oxygen = Oxygen({
+  subsets: ["latin"],
+  weight: ["300", "400", "700"],
+  variable: "--font-oxygen",
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -8,7 +15,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={`${oxygen.variable} font-oxygen antialiased`}>
+        {children}
+      </body>
     </html>
   );
 }
