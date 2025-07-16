@@ -12,33 +12,39 @@ const Testimonial = () => {
 
     const testimonies =[{
         profileimage:image,
-        username:"Collins Cyncra",
-        testimony:"Omnis totam molestiae delectus nemo alias nesciunt harum et. Nobis dolorum excepturi quod vel. Sunt est qui ab non dolores repellat rem impedit dolores. Ut ea rerum cum eum. Alias dolores tempore illo accusantium est et voluptatem voluptas."
+        username:"John Okonkwo",
+        jobrole:" Frontend Developer, Turing Inc",
+        testimony:"Cyncra didn’t just teach me how to write clean code, it completely reshaped how I see myself as a tech professional. The hands-on projects, real deadlines, and supportive team made me feel like I was already working in a top-tier company. Just a month after the program, I landed my first remote frontend role, and I’ve been growing ever since."
     },
     {
         profileimage:image1,
-        username:"Salako Cyncra",
-        testimony:"Omnis totam molestiae delectus nemo alias nesciunt harum et. Nobis dolorum excepturi quod vel. Sunt est qui ab non dolores repellat rem impedit dolores. Ut ea rerum cum eum. Alias dolores tempore illo accusantium est et voluptatem voluptas."
-    },
-     {
-        profileimage:image1,
-        username:"Salako Cyncra",
-        testimony:"Omnis totam molestiae delectus nemo alias nesciunt harum et. Nobis dolorum excepturi quod vel. Sunt est qui ab non dolores repellat rem impedit dolores. Ut ea rerum cum eum. Alias dolores tempore illo accusantium est et voluptatem voluptas."
+        username:"David Adeyemi",
+        jobrole:"Product Designer, Flutterwave",
+        testimony:"Coming into Cyncra, I had doubts about whether I belonged in tech. But every session, every challenge, and every mentor pushed me to believe in myself. I built things I never thought I could, collaborated with amazing peers, and walked away with a portfolio I’m proud of. Today, I work at Flutterwave,  and it all started with Cyncra.."
     },
      {
         profileimage:image,
-        username:"Salako Cyncra",
-        testimony:"Omnis totam molestiae delectus nemo alias nesciunt harum et. Nobis dolorum excepturi quod vel. Sunt est qui ab non dolores repellat rem impedit dolores. Ut ea rerum cum eum. Alias dolores tempore illo accusantium est et voluptatem voluptas."
+        username:"Fatima Lawal",
+         jobrole:"Software Engineer, NestPay",
+        testimony:"What set Cyncra apart for me was the structure. There was a clear path from learning to doing to becoming. The mentorship was exceptional — I wasn’t just taught, I was guided and challenged. That journey gave me the confidence to apply to competitive startups, and I got hired by a YC-backed company a few weeks after graduation."
     },
      {
         profileimage:image1,
-        username:"Salako Cyncra",
-        testimony:"Omnis totam molestiae delectus nemo alias nesciunt harum et. Nobis dolorum excepturi quod vel. Sunt est qui ab non dolores repellat rem impedit dolores. Ut ea rerum cum eum. Alias dolores tempore illo accusantium est et voluptatem voluptas."
+        username:"Chinedu Obi",
+        jobrole:"Backend Developer, Kuda Bank",
+        testimony:"Before Cyncra, I’d spent months jumping from one online tutorial to another without direction. The program gave me real-world experience — building actual projects, solving real problems, and learning how to work as part of a product team. It prepared me not just technically, but mentally for the fast-paced tech world."
+    },
+     {
+        profileimage:image,
+        username:"Blessing Adebayo",
+        jobrole:"UI/UX Designer, Moniepoint",
+        testimony:"Cyncra helped me go from passive learner to active creator. I went from watching courses to building applications with deadlines, reviews, and teamwork. It was intense, but incredibly rewarding. More than the skills, Cyncra gave me belief in myself. I now work as a UI/UX designer, and I still apply the lessons I learned there every day."
     },
      {
         profileimage:image1,
-        username:"Salako Cyncra",
-        testimony:"Omnis totam molestiae delectus nemo alias nesciunt harum et. Nobis dolorum excepturi quod vel. Sunt est qui ab non dolores repellat rem impedit dolores. Ut ea rerum cum eum. Alias dolores tempore illo accusantium est et voluptatem voluptas."
+        username:"Tomiwa Ogunleye",
+        jobrole:"DevOps Engineer, Paystack",
+        testimony:"Transitioning into tech from a different field felt like climbing a mountain until I joined Cyncra. They broke down complex ideas, created space for questions, and pushed me beyond my comfort zone. I got to work on real deployments and learned the DevOps pipeline hands-on. Today, I support production systems at Paystack — thanks to the solid foundation from Cyncra."
     },
     
 ]
@@ -95,7 +101,7 @@ const Testimonial = () => {
                                     {testimony.username}
                                 </p>
                                 <p className='text-[16px]  text-[#02353C]'>
-                                    CEO
+                                    {testimony.jobrole}
                                 </p>
                             </div>
                             <p className='w-[520px] text-[16px] text-[#02353C] mt-[24px]'>

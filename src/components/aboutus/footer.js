@@ -69,7 +69,7 @@ const Footer = () => {
 
                 </div>
 
-                <div className='mt-[40px]   flex justify-between items-center h-[40px]'>
+                <div className='mt-[40px] flex justify-between items-center h-[40px]'>
                   <Image src={logo} alt='logo icon'/>
                   <p className='text-[14px] leading-[14px] w-[342px] text-white '>
                      &copy;{currentYear} Lift Media. All Rights Reserved. 
