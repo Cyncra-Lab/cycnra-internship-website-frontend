@@ -7,15 +7,20 @@ import Testimonial from "@/components/aboutus/testimonial"
 import Workflow from "@/components/aboutus/workflow"
 
 
+
 const AboutUs = () => {
   return (
         <>
-        <Header/>
-        <main>
-            <Aboutushero/>
-            <Workflow/>
+        
+          <Header/>
+            <main>
+              <Aboutushero/>
+              <Workflow/>
             <Testimonial/>
-        </main>
+
+            </main>
+            
+       
         <Footer/>
        
         </>
