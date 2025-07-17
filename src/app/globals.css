@@ -24,3 +24,7 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.cta-curve {
+  clip-path: ellipse(100% 90% at 50% 100%);
+}

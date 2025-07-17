@@ -3,7 +3,8 @@ import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#02353C] text-white py-12 px-4">
+    <footer className="bg-[#02353C] text-white py-12 px-4 relative overflow-visible">
+        <img src="/footer.png" alt="Team working" className="w-70 h-70 rounded-full object-cover absolute -top-70 right-4 z-30 shadow-lg" />
       <div className="max-w-7xl mx-auto grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-10 relative">
         <div>
           <h4 className="font-bold mb-2">NAVIGATION</h4>
