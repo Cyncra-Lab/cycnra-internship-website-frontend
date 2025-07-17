@@ -7,8 +7,8 @@ const Header = () => {
 
   return (
     <>
-      <header className="w-full flex justify-center fixed top-0 z-100 items-center   h-[120px]">
-        <div className="w-[90%] bg-[#02353C] flex justify-between items-center px-[20px]  h-[100px] rounded-[80px]">
+      <header className="w-full flex justify-center fixed top-[10px] z-100 items-center   h-[120px]">
+        <div className="w-[1235px] bg-[#02353C] flex justify-between items-center px-[20px]  h-[90px] rounded-[80px]">
           <div>
             <Image src={cyncralogo} alt="cyncra logo icon" />
           </div>

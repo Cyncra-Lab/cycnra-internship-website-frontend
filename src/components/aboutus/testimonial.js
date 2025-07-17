@@ -72,7 +72,7 @@ const Testimonial = () => {
   return (
     <>
       <section className="w-full flex justify-center items-center h-[720px]">
-        <div className="w-[95%] h-[600px]  flex gap-[116px]">
+        <div className="w-[90%] h-[600px]  flex gap-[116px]">
           <div className="w-[239px]  h-[348px] ">
             <div className="flex justify-center items-center bg-[#02353C] w-[239px] h-[185px] ">
               <Image src={quote} alt="left quote icon" />

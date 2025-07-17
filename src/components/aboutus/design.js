@@ -18,7 +18,7 @@ const Design = ({ frame1, maintext, subtext }) => {
             elements, it includes layout design, user interaction (UX/UI)
           </p>
         </div>
-        <button className="h-[232px] focus:outline-2 outline-white  hover:bg-opacity-65 hover:text-[#FFC857] w-[78px] flex items-center justify-center border-[2px] rounded-[50px] ">
+        <button className="h-[232px] focus:outline-2 outline-white border-white hover:border-[#FFC857]   w-[78px] flex items-center justify-center border-[2px] rounded-[50px] ">
           <Image src={caret} alt="caret right icon" />
         </button>
       </div>

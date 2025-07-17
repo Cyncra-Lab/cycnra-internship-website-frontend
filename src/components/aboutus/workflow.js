@@ -9,7 +9,7 @@ const Workflow = () => {
   return (
     <>
       <section className="w-full flex justify-center items-center h-[1300px] bg-[#02353C]">
-        <div className="w-[95%] h-[1176px] flex flex-col gap-[75px] ">
+        <div className="w-[90%] h-[1176px] flex flex-col gap-[75px] ">
           <div className="flex justify-between items-center">
             <p className="text-[40px] leading-[120%] w-[512px] h-[96px] text-[#E6FAFC]">
               Seamless, Flexible and Efficient Workflow
