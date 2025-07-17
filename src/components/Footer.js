@@ -2,8 +2,8 @@ import Image from 'next/image';
 
 export default function Footer() {
     
-    const date = new Date();
-    const currentYear = date.getFullYear();
+  const date = new Date();
+  const currentYear = date.getFullYear();
  
   return (
     <footer className='mt-20 font-jakarta'>

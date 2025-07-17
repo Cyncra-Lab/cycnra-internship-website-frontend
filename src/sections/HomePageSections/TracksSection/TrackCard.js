@@ -1,26 +1,25 @@
-// components/TrackCard.jsx
-import { BsArrowRightCircle } from "react-icons/bs";
+import Image from 'next/image';
+import { FaArrowRight } from "react-icons/fa6";
 
-export default function TrackCard() {
-  const tracks = [
-    "Frontend Development",
-    "Backend Development",
-    "UI/UX Design",
-    "Product Management",
-    "Digital Marketing",
-  ];
+export default function TrackCard({ course }) {
+  if (!course) return null;
 
   return (
-    <ul className="flex flex-col mt-8 text-[var(--text-dark-gray)]">
-      {tracks.map((track, index) => (
-        <li
-          key={index}
-          className="lg:text-5xl border-b-2 pt-13 pb-5 flex justify-between items-center cursor-pointer hover:text-[var(--text-light-gray)] transition-text duration-300"
-        >
-          <span className="font-bold">{track}</span>
-          <BsArrowRightCircle className="text-[var(--text-dark-gray)] w-[50px] h-[50px]  hover:text-[var(--text-light-gray)] transition-text duration-300" />
-        </li>
-      ))}
-    </ul>
+    <div className="bg-[var(--text-white)] text-black p-[40px] rounded-[20px] shadow-md mt-4">
+      <Image
+        src={course.image.src}
+        width={300}
+        height={300}
+        alt={course.image.alt}
+        className="mb-5"
+      />
+      <h2 className="uppercase text-xl text-[var(--header-background)] font-bold mb-2">{course.title}</h2>
+      <p className="text-sm text-[var(--header-background)] mb-1">Duration: {course.duration}</p>
+      <p className="text-sm text-[var(--header-background)] mb-3">{course.description}</p>
+      <button className="bg-[var(--yellow-btn)] text-[var(--header-background)] font-bold text-sm rounded-full py-[10px] px-[20px] cursor-pointer flex gap-5 items-center" >
+        Learn More
+        <FaArrowRight />
+      </button>
+    </div>
   );
 }
