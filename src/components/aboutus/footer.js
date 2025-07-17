@@ -42,8 +42,19 @@ const Footer = () => {
   ];
   return (
     <>
-      <section className=" w-full h-[980px]   flex font-jakarta flex-col   justify-end mt-[50px]  ">
-        <div className="w-full h-[240px] bg-[#02353C]   clip-top-curve   "></div>
+      <section className=" w-full h-[980px]  relative  flex font-jakarta flex-col   justify-end mt-[100px]  ">
+       <div className="absolute top-0 left-0 w-full overflow-hidden">
+        <svg
+          className="w-full h-[211px] bg-[#02353C] "
+          viewBox="0 0 1440 100"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0,100 C400,0 1040,0 1440,100 L1440,0 L0,0 Z"
+            fill="var(--background)"
+          />
+        </svg>
+      </div>
 
         <div className="h-[769px]  bg-[#02353C]  relative  flex justify-center items-center  w-full ">
           <Image
@@ -53,8 +64,8 @@ const Footer = () => {
           />
           <div className="w-[90%] h-[620px] flex flex-col ">
             <div className="w-[489px] h-[153px] ">
-              <h1 className=" text-[40px] h-[80px]">Ready to get started?</h1>
-              <button className="w-[489px] h-[60px] text-[14px] font-medium focus:outline-2 outline-white rounded-[27px] text-[#0A142F] hover:bg-[#0A142F] hover:text-white leading-[24px] tracking-[1px] bg-white mt-[12px]">
+              <h1 className=" text-[40px] h-[80px] text-white">Ready to get started?</h1>
+              <button className="w-[489px] h-[60px] transition-all duration-150 text-[14px] font-medium focus:outline-2 outline-white rounded-[27px] text-[#0A142F] hover:bg-[#0A142F] hover:text-white leading-[24px] tracking-[1px] bg-white mt-[12px]">
                 KICKSTART YOUR FUTURE
               </button>
             </div>

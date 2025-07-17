@@ -15,7 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${oxygen.variable} font-oxygen antialiased`}>
+      <body >
         {children}
       </body>
     </html>

@@ -9,7 +9,7 @@ const Aboutushero = () => {
   return (
     <>
 
-      <section className="w-full flex flex-col justify-center items-center h-auto  about-bg pt-[150px] pb-[50px] ">
+      <section className="w-full flex flex-col justify-center items-center h-auto  bg-[url('/assets/aboutus/svg/aboutushero/doodle.svg')] bg-no-repeat bg-center bg-cover  pt-[150px] pb-[50px] ">
         <div className="w-[90%] h-[609px] ">
           <div className="flex justify-between items-center ">
             <div className="w-[760px] h-[408px]  ">
