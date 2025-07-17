@@ -31,4 +31,25 @@ body {
 .font-jakarta {
   font-family: var(--font-jakarta);
 }
+.clip-top-curve {
+
+  clip-path: ellipse(55% 50% at 50% 100%);
+   transform: rotate(360deg);
+   
+   
+ 
+
+
+ 
+}
+
+.about-bg {
+  background-image: url('/assets/aboutus/svg/aboutushero/doodle.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+
 
