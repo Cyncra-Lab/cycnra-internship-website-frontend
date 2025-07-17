@@ -29,9 +29,6 @@ body {
 .font-jakarta {
   font-family: var(--font-jakarta);
 }
-.clip-top-curve {
-  clip-path: ellipse(100% 50% at 0% 0%);
-  
-}
+
 
 
