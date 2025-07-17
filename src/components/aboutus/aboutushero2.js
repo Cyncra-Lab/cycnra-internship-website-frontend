@@ -5,7 +5,6 @@ import kanban from "../../../public/assets/aboutus/svg/aboutushero/Kanban.svg";
 import ramadhan from "../../../public/assets/aboutus/svg/aboutushero/ramadhan.svg";
 import course from "../../../public/assets/aboutus/svg/aboutushero/course.svg";
 
-
 const Aboutushero2 = () => {
   const display = [
     {

@@ -2,7 +2,7 @@ import Image from "next/image";
 import frame1 from "../../../public/assets/aboutus/svg/workflow/Frame1.svg";
 import frame2 from "../../../public/assets/aboutus/svg/workflow/Frame2.svg";
 import frame3 from "../../../public/assets/aboutus/svg/workflow/Frame3.svg";
-import caret from "../../../public/assets/aboutus/svg/workflow/CaretRight.svg";
+
 import Design from "./design";
 
 const Workflow = () => {
