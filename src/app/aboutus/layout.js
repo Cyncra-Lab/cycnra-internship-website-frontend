@@ -1,16 +1,15 @@
-import { Oxygen,Plus_Jakarta_Sans } from "next/font/google";
-
+import { Oxygen, Plus_Jakarta_Sans } from "next/font/google";
 
 const oxygen = Oxygen({
   subsets: ["latin"],
-   weight: ["300", "400", "700"],
-  variable: "--font-oxygen", 
+  weight: ["300", "400", "700"],
+  variable: "--font-oxygen",
 });
 
 const jakarta = Plus_Jakarta_Sans({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700'], 
-  variable: '--font-jakarta',
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-jakarta",
 });
 
 export const metadata = {
@@ -18,19 +17,14 @@ export const metadata = {
   description: "General information about Cyncra Internship program",
 };
 
-const AboutUsLayout = ({children}) => {
+const AboutUsLayout = ({ children }) => {
   return (
     <>
-        <html lang="en"  >
-            <body
-               
-            >
-                {children}
-            </body>
-        </html>
+      <html lang="en">
+        <body>{children}</body>
+      </html>
     </>
-   
-  )
-}
+  );
+};
 
-export default AboutUsLayout
+export default AboutUsLayout;

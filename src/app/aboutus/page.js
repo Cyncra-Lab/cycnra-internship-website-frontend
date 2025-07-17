@@ -15,7 +15,6 @@ const AboutUs = () => {
         <Workflow />
         <Testimonial />
       </main>
-
       <Footer />
     </>
   );
