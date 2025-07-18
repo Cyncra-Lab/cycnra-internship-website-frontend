@@ -5,7 +5,6 @@ import kanban from "../../../public/assets/aboutus/svg/aboutushero/Kanban.svg";
 import ramadhan from "../../../public/assets/aboutus/svg/aboutushero/ramadhan.svg";
 import course from "../../../public/assets/aboutus/svg/aboutushero/course.svg";
 
-
 const Aboutushero2 = () => {
   const display = [
     {
@@ -32,7 +31,7 @@ const Aboutushero2 = () => {
   return (
     <>
       <section className="w-full flex justify-center mt-[40px] ">
-        <div className="w-[95%] h-[572px]  flex flex-col ">
+        <div className="w-[90%] h-[572px]  flex flex-col ">
           <div className="flex justify-between items-center ">
             <p className="font-bold text-[40px] w-[574px] text-[#02353C] leading-[120%] ">
               Cyncra{" "}
