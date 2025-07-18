@@ -31,7 +31,7 @@ const interns = [
 const Interns = () => {
   return (
     <section className="bg-white py-16 px-15">
-      <h3 className="text-xl font-semibold">→ Interns:</h3>
+      <h3 className="text-xl font-semibold mb-10">→ Interns:</h3>
       <div className="max-w-7xl mx-auto text-center">
         <div className="flex justify-between items-center mb-10">
           <h4 className="text-2xl text-[#02353C] font-bold mb-2">
