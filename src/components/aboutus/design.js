@@ -1,4 +1,5 @@
-import caret from "../../../public/svg/workflow/CaretRight.svg";
+import caret from "../../../public/assets/aboutus/svg/workflow/CaretRight.svg";
+
 import Image from "next/image";
 const Design = ({ frame1, maintext, subtext }) => {
   return (
@@ -18,9 +19,10 @@ const Design = ({ frame1, maintext, subtext }) => {
             elements, it includes layout design, user interaction (UX/UI)
           </p>
         </div>
-        <div className="h-[232px] w-[78px] flex items-center justify-center border-[2px] rounded-[50px] ">
+
+        <button className="h-[232px] focus:outline-2 focus:outline-white border-white  hover:bg-opacity-65 hover:border-[#FFC857] w-[78px] flex items-center justify-center border-[2px] rounded-[50px] ">
           <Image src={caret} alt="caret right icon" />
-        </div>
+        </button>
       </div>
     </>
   );
