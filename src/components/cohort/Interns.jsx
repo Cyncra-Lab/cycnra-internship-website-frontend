@@ -30,18 +30,21 @@ const interns = [
 
 const Interns = () => {
   return (
-    <section className="bg-white py-16 px-4">
+    <section className="bg-white py-16 px-15">
+      <h3 className="text-xl font-semibold">→ Interns:</h3>
       <div className="max-w-7xl mx-auto text-center">
         <div className="flex justify-between items-center mb-10">
-          <h3 className="text-xl font-semibold">→ Interns:</h3>
+          <h4 className="text-2xl text-[#02353C] font-bold mb-2">
+            Engage with Our <br /> Creative Team
+          </h4>
           <p className="text-gray-600 max-w-md text-sm text-right">
             Meet our talented and dedicated cohort members and their roles.
           </p>
         </div>
 
-        <h2 className="text-3xl font-bold mb-2">
+        {/* <h2 className="text-3xl font-bold mb-2">
           Engage with Our Creative Team
-        </h2>
+        </h2> */}
 
         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {interns.map((member, idx) => (

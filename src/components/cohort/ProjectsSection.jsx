@@ -1,3 +1,5 @@
+import CohortInfo from "./CohortInfo";
+
 const projects = [
   {
     title: "Project One",
@@ -20,7 +22,10 @@ const projects = [
 ];
 
 const ProjectsSection = () => (
-  <section className="bg-[#02353C] py-12 text-white px-6">
+  <>
+    
+    <section className="bg-[#02353C] p-14 text-white px-15 mt-85 h-[850px]">
+    <CohortInfo />
     <h3 className="text-2xl font-semibold mb-6">→ Projects Worked On:</h3>
     <div className="grid md:grid-cols-3 gap-8">
       {projects.map((proj, index) => (
@@ -38,6 +43,7 @@ const ProjectsSection = () => (
       ))}
     </div>
   </section>
+  </>
 );
 
 export default ProjectsSection;
