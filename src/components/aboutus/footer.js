@@ -42,7 +42,7 @@ const Footer = () => {
   ];
   return (
     <>
-      <section className=" w-full h-[980px]  relative  flex font-jakarta flex-col   justify-end mt-[100px]  ">
+      <section className=" w-full h-[980px]  relative  flex font-jakarta flex-col   justify-end mt-[150px]  ">
         <div className="absolute top-0 left-0 w-full overflow-hidden">
           <svg
             className="w-full h-[211px] bg-[#02353C] "
@@ -60,7 +60,7 @@ const Footer = () => {
           <Image
             src={footerimg}
             alt="a footer image"
-            className="absolute right-[20px] -top-[300px] w-[592px] h-[577px]"
+            className="absolute right-[20px] -top-[350px] w-[592px] h-[577px]"
           />
           <div className="w-[90%] h-[620px] flex flex-col ">
             <div className="w-[489px] h-[153px] ">
