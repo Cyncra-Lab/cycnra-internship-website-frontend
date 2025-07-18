@@ -1,4 +1,4 @@
-import TrackCard from "./TrackCard";
+import TrackList from "./TrackList";
 
 export default function TracksSection(){
     return(
@@ -13,7 +13,7 @@ export default function TracksSection(){
             your network, and accelerate your career with real projects and mentorship.
             </p>
         </div>
-        <TrackCard />
+        <TrackList />
         </>
     )
 }
