@@ -51,16 +51,15 @@ const Interns = () => {
 
   return (
     <section className="bg-white py-16 px-6 md:px-12">
-      <h3 className="text-xl font-semibold mb-8">→ Interns:</h3>
+      <h3 className="text-xl font-semibold mb-8 flex items-center gap-2"><Image src="/images/arrow-right.png" alt="Right arrow" width={35} height={24} /> Interns:</h3>
 
       <div className="max-w-7xl mx-auto">
-        {/* Heading Section */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-10 gap-4">
-          <h4 className="text-2xl text-[#02353C] font-bold">
+          <h3 className="text-[36px] leading-[1.4] tracking-[-0.02em] text-[#02353C] font-bold">
             Engage with Our<br /> Creative Team
-          </h4>
-          <p className="text-gray-600 max-w-md text-sm text-right">
-            Meet our talented and dedicated cohort members and their roles.
+          </h3>
+          <p className="text-[21px] leading-[1.4] tracking-[-0.02em] text-[#02353C] max-w-md text-sm text-left font-normal">
+            Meet our talented and dedicated <br /> cohort members and their roles.
           </p>
         </div>
 
@@ -73,7 +72,7 @@ const Interns = () => {
             {interns.map((member, idx) => (
               <div
                 key={idx}
-                className="min-w-[250px] bg-[#02353C] text-white p-5 rounded-xl shadow-md flex-shrink-0"
+                className="min-w-[250px] bg-[#02353C] text-white py-8 px-10 rounded-xl shadow-md flex-shrink-0"
               >
                 <Image
                   src={member.img}
@@ -82,11 +81,11 @@ const Interns = () => {
                   height={250}
                   className="rounded-md w-full h-48 object-cover mb-4"
                 />
-                <h3 className="font-semibold text-md uppercase">
+                <h3 className="font-semibold text-[#E6FAFC] text-[20px] leading-[1.4] tracking-[0.15em] uppercase">
                   {member.name}
                 </h3>
-                <p className="text-sm text-teal-100">{member.role}</p>
-                <p className="text-xs mt-2 mb-3 text-gray-300">
+                <p className="text-[14px] leading-5 text-white-400 mt-3">{member.role}</p>
+                <p className="text-[12px] text-white-400 leading-[1.4] tracking-[-0.02em] mt-3 mb-3">
                   {member.description}
                 </p>
                 <div className="flex space-x-4 text-white text-sm">
