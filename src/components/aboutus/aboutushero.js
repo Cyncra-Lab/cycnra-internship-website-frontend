@@ -8,8 +8,8 @@ import Aboutushero2 from "../aboutus/aboutushero2";
 const Aboutushero = () => {
   return (
     <>
-      <section className="w-full flex flex-col justify-center items-center h-auto  bg-[url('/assets/aboutus/svg/aboutushero/herobg.svg')] bg-no-repeat bg-center bg-cover  pt-[150px] pb-[50px] ">
-        <div className="w-[90%] h-[609px] ">
+      <section className="w-[1728px] px-[150px] flex flex-col justify-center items-center h-auto  bg-[url('/assets/aboutus/svg/aboutushero/herobg.svg')] bg-no-repeat bg-center bg-cover  pt-[150px] pb-[50px] ">
+        <div className="w-[1428px] h-[609px] ">
           <div className="flex justify-between items-center ">
             <div className="w-[760px] h-[408px]  ">
               <h1 className="text-[60px] font-normal text-black ">
@@ -36,7 +36,7 @@ const Aboutushero = () => {
             <Image
               src={heroimage}
               alt="about us hero image"
-              className="w-[549px]"
+              className=""
             />
           </div>
         </div>
