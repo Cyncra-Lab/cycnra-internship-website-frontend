@@ -22,7 +22,7 @@ const Aboutushero = () => {
                   Our Success
                 </span>
               </h1>
-              <p className="text-[20px] leading-[140%]  tracking-[5%] text-[#02353C] w-[711px] mt-[30px]">
+              <p className="text-[20px] bg-[red] leading-[140%]  tracking-[5%] text-[#02353C] w-[711px] mt-[30px]">
                 At Cyncra we’re more than just an internship program, We’re a
                 launchpad for tomorrow’s top tech talents. Our mission is to
                 empower ambitious learners to transform their skills, gain real
