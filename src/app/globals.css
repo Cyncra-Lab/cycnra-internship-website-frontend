@@ -3,11 +3,35 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+}
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+
+  --yellow-btn: #FFC857;
+  --text-dark-gray: #E6FAFC66;
+  --text-subtle-gray: #6A6A6A;
+  --text-light-gray: #E6FAFCD1;
+  --text-white: #E6FAFC;
+  --text-dark: #010205;
+  --footer-text-dark: #0A142F;
+  --header-background: #02353C;
+
   --font-oxygen: "Oxygen", sans-serif;
   --font-jakarta: "Plus Jakarta Sans", sans-serif;
 }
 
 
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+
+/* Dark mode support */
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -15,10 +39,51 @@
   }
 }
 
+/* --- Fonts Configuration --- */
+@font-face {
+  font-family: 'Oxygen';
+  src: url('/fonts/oxygen/Oxygen-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Oxygen';
+  src: url('/fonts/oxygen/Oxygen-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Oxygen';
+  src: url('/fonts/oxygen/Oxygen-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('/fonts/plus-jakarta-sans/static/PlusJakartaSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('/fonts/plus-jakarta-sans/static/PlusJakartaSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
 body {
   color: var(--foreground);
-  font-family: var(--font-oxygen);
 }
+body {
+  color: var(--foreground);
+
+  font-family: 'Oxygen', sans-serif; 
+
+}
+
+.cta-curve {
+  clip-path: ellipse(100% 90% at 50% 100%);
+}
+
 
 .font-jakarta {
   font-family: var(--font-jakarta);
