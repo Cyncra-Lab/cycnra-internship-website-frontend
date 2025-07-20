@@ -1,14 +1,13 @@
 import Image from 'next/image';
 
 export default function Footer() {
-    
   const date = new Date();
   const currentYear = date.getFullYear();
- 
+
   return (
-    <footer className='mt-20 font-jakarta'>
+    <footer className="mt-10 font-jakarta border border-red-500">
       {/* Top Curve SVG */}
-      <div className="absolute top-0 left-0 w-full overflow-hidden">
+      <div className="absolute top-0 left-0 w-full z-10 border border-red-500">
         <svg
           className="w-full h-[100px]"
           viewBox="0 0 1440 100"
@@ -21,9 +20,15 @@ export default function Footer() {
         </svg>
       </div>
 
-      {/* Top Right Image */}
-      <div className="absolute right-0 top-0 z-10">
-        <Image src="/images/footer_image.png" width={550} height={500} alt="footer_image" className="rounded-full" />
+      {/* Top Right Image  */}
+      <div className="absolute right-0 -top-20 z-20">
+        <Image
+          src="/images/footer_image.png"
+          width={550}
+          height={500}
+          alt="footer_image"
+          className="rounded-full border border-red-500 z-20"
+        />
       </div>
 
       <div className="container mx-auto z-20 relative">
@@ -83,8 +88,10 @@ export default function Footer() {
 
         {/* Bottom Footer */}
         <div className="border-t border-white/20 mt-12 pt-4 flex justify-between items-center text-xs">
-          <Image src="/images/cyncra_logo.svg" width={190} height={28} alt='cyncra_logo' />
-          <p className='text-[var(--text-light-gray)]'>&copy; {currentYear} Lift Media. All Rights Reserved.</p>
+          <Image src="/images/cyncra_logo.svg" width={190} height={28} alt="cyncra_logo" />
+          <p className="text-[var(--text-light-gray)]">
+            &copy; {currentYear} Lift Media. All Rights Reserved.
+          </p>
           <div className="flex gap-4">
             <Image src="/icons/facebook.svg" alt="Facebook" width={25} height={25} />
             <Image src="/icons/linkedin.svg" alt="LinkedIn" width={25} height={25} />

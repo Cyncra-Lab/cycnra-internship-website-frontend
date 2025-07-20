@@ -42,7 +42,7 @@ const Footer = () => {
   ];
   return (
     <>
-      <section className=" w-full h-[980px]  relative  flex font-jakarta flex-col   justify-end mt-[100px]  ">
+      <section className=" w-full h-[980px]  relative  flex font-jakarta flex-col  justify-end mt-[100px]  ">
         <div className="absolute top-0 left-0 w-full overflow-hidden">
           <svg
             className="w-full h-[211px] bg-[#02353C] "

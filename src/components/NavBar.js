@@ -4,14 +4,13 @@ import { FaArrowRight } from "react-icons/fa6";
 
 export default function NavBar(){
     return(
-        <header  className="fixed top-10 left-1/2 transform -translate-x-1/2 w-[80%] flex justify-between items-center bg-[var(--header-background)] rounded-[80px] px-4 py-5 z-30">
+        <header  className="fixed top-10 left-1/2 transform -translate-x-1/2 w-[80%] flex justify-between items-center bg-[var(--header-background)] rounded-[80px] px-7 py-5 z-30">
             <nav>
                 <Image src='/images/cyncra_logo.svg' width={130} height={30} alt='cyncra_logo' />
             </nav>
 
             <nav>
                 <ul className='flex justify-between items-center gap-5 text-gray-50'>
-                    <li><Link href='/'>Home</Link></li>
                     <li><Link href='/aboutus'>About</Link></li>
                     <li><Link href='/cohorts'>Cohorts</Link></li>
                     <li><Link href='/contact'>Contact Us</Link></li>
