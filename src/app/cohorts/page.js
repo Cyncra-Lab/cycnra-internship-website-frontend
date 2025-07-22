@@ -2,7 +2,6 @@
 import Hero from "@/components/cohort/Hero";
 import Interns from "@/components/cohort/Interns";
 import React from "react";
-import CohortInfo from "@/components/cohort/CohortInfo";
 import ProjectsSection from "@/components/cohort/ProjectsSection";
 import Footer from "@/components/aboutus/footer";
 import NavBar from "@/components/NavBar";
