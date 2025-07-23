@@ -1,5 +1,5 @@
 import NavBar from "@/components/NavBar";
-import Footer from "@/components/Footer";
+import Footer from "@/components/aboutus/footer";
 import Container from "@/components/Container";
 import HeroSection from "@/sections/HomePageSections/HeroSection/HeroSection";
 import TracksSection from "@/sections/HomePageSections/TracksSection/TracksSection";
@@ -32,10 +32,8 @@ export default function Home() {
       </section>
 
       {/* Footer Section */}
-      <section className="relative bg-[var(--header-background)] text-[var(--text-white)] py-20 mt-[100px] overflow-hidden">
-        <Container>
-          <Footer />
-        </Container>
+      <section>
+        <Footer />
       </section>
     </>
   );
