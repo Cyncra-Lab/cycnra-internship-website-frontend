@@ -8,8 +8,8 @@ import Design from "./design";
 const Workflow = () => {
   return (
     <>
-      <section className="w-full flex justify-center items-center h-[1300px] bg-[#02353C]">
-        <div className="w-[90%] h-[1176px] flex flex-col gap-[75px] ">
+      <section className="w-[1730px] px-[150px] pt-[83px] flex justify-center items-center h-[1300px] bg-[#02353C]">
+        <div className="w-[1425px] h-[1176px]  flex flex-col gap-[75px] ">
           <div className="flex justify-between items-center">
             <p className="text-[40px] leading-[120%] w-[512px] h-[96px] text-[#E6FAFC]">
               Seamless, Flexible and Efficient Workflow
@@ -32,20 +32,22 @@ const Workflow = () => {
               View Details
             </button>
 
-            <div className="flex flex-col w-[631px] ">
-              <p className="text-[36px]  leading-[120%]  text-[#E6FAFC]">
-                Research
-              </p>
-              <p className="h-[136px] text-[20px] leading-[120%] mt-[21px] text-[#E6FAFC] ">
-                At the core of every successful project lies through research.
-                Ou web agency prioritizes understanding your audience, market
-                trends and industry insights to craft digital solutions that
-                resonant with your goals. our system optimizes every steps,
-                saving time and boosting productivity. whether handling simple
-                tasks or managing complex projects.
-              </p>
+            <div className="flex  items-center gap-[10px]">
+              <div className="flex flex-col w-[631px] ">
+                <p className="text-[36px]  leading-[120%]  text-[#E6FAFC]">
+                  Research
+                </p>
+                <p className="h-[136px] text-[20px] leading-[120%] mt-[21px] text-[#E6FAFC] ">
+                  At the core of every successful project lies through research.
+                  Ou web agency prioritizes understanding your audience, market
+                  trends and industry insights to craft digital solutions that
+                  resonant with your goals. our system optimizes every steps,
+                  saving time and boosting productivity. whether handling simple
+                  tasks or managing complex projects.
+                </p>
+              </div>
+              <Image src={frame2} alt="image" className="w-[432px] h-[266px]" />
             </div>
-            <Image src={frame2} alt="image" className="w-[432px] h-[266px]" />
           </div>
 
           <Design
