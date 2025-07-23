@@ -4,6 +4,7 @@ import Container from "@/components/Container";
 import HeroSection from "@/sections/HomePageSections/HeroSection/HeroSection";
 import TracksSection from "@/sections/HomePageSections/TracksSection/TracksSection";
 import AboutSection from "@/sections/HomePageSections/AboutSection/AboutSection";
+import Cohort from "./cohort/page"; // keep this from cohort branch
 
 export default function Home() {
   return (
@@ -12,7 +13,6 @@ export default function Home() {
       <section className="relative min-h-screen bg-[url('/images/hero_background.png')] bg-cover bg-center">
         <NavBar />
         <Container className="h-full flex flex-col justify-between pt-30 pb-10">
-          {/* Hero Content */}
           <HeroSection />
         </Container>
       </section>
@@ -20,7 +20,7 @@ export default function Home() {
       {/* Tracks Section */}
       <section className="bg-[var(--header-background)] py-20">
         <Container>
-         <TracksSection />
+          <TracksSection />
         </Container>
       </section>
 
@@ -31,8 +31,15 @@ export default function Home() {
         </Container>
       </section>
 
+      {/* Cohort Section - from cohort branch */}
+      <section className="py-20 bg-white">
+        <Container>
+          <Cohort />
+        </Container>
+      </section>
+
       {/* Footer Section */}
-      <section className="relative bg-[var(--header-background)]  text-[var(--text-white)] py-20  mt-[100px] overflow-hidden">
+      <section className="relative bg-[var(--header-background)] text-[var(--text-white)] py-20 mt-[100px] overflow-hidden">
         <Container>
           <Footer />
         </Container>
