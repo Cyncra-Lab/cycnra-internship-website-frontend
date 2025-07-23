@@ -28,7 +28,7 @@ const Workflow = () => {
           />
 
           <div className="flex justify-between items-center">
-            <button className="xl:h-[258px] lg:h-[192px] w-[106px] focus:outline-2 outline-white  hover:bg-[#FFC85780] hover:text-[#FFC857] cursor-pointer text-[#02353C] text-[24px] bg-[#FFC857] py-auto px-[18px]  rounded-[50px] ">
+            <button className="xl:h-[258px] lg:h-[192px] xl:w-[106px] lg:w-[80px] focus:outline-2 outline-white  hover:bg-[#FFC85780] hover:text-[#FFC857] cursor-pointer text-[#02353C] xl:text-[24px] lg:text-[18px] bg-[#FFC857] py-auto  rounded-[50px] ">
               View Details
             </button>
 

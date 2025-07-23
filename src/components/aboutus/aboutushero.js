@@ -8,7 +8,7 @@ import Aboutushero2 from "../aboutus/aboutushero2";
 const Aboutushero = () => {
   return (
     <>
-      <section className="w-[100%]  flex flex-col justify-center items-center h-auto  bg-[url('/assets/aboutus/svg/aboutushero/herobg.svg')] bg-no-repeat bg-center bg-cover pt-[150px] pb-[50px] ">
+      <section className="w-[100%]  flex flex-col justify-center items-center h-auto  bg-[url('/assets/aboutus/svg/aboutushero/herobg.svg')] bg-no-repeat bg-center bg-cover pt-[140px] pb-[50px] ">
         <div className="w-[90%] xl:h-[609px]    ">
           <div className="flex justify-between lg:gap-[50px] xl:gap-0 items-center  ">
             <div className=" xl:h-[408px]  max-w-[751px]  ">
@@ -36,7 +36,7 @@ const Aboutushero = () => {
             <Image
               src={heroimage}
               alt="about us hero image"
-              className="xl:w-[500px] xl:h-[600px]  lg:w-[400px] lg:h-[500px]"
+              className="xl:h-[600px]  min-w-[350px] lg:h-[500px]"
             />
           </div>
         </div>
