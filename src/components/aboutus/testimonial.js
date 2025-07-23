@@ -71,8 +71,8 @@ const Testimonial = () => {
   };
   return (
     <>
-      <section className="w-[1727px] pl-[153px]  flex justify-center about-bg items-center h-[720px]">
-        <div className="w-[1573px]  h-[600px]  flex gap-[116px]">
+      <section className="w-[100%] pl-[53px]  flex justify-center about-bg items-center h-[720px]">
+        <div className="w-[100%]  h-[600px]  flex gap-[116px]">
           <div className="w-[239px]  h-[348px] ">
             <div className="flex justify-center items-center bg-[#02353C] w-[239px] h-[185px] ">
               <Image src={quote} alt="left quote icon" />
