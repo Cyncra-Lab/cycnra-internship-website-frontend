@@ -4,7 +4,7 @@ import Container from "@/components/Container";
 import HeroSection from "@/sections/HomePageSections/HeroSection/HeroSection";
 import TracksSection from "@/sections/HomePageSections/TracksSection/TracksSection";
 import AboutSection from "@/sections/HomePageSections/AboutSection/AboutSection";
-import Cohort from "./cohort/page"; // keep this from cohort branch
+import Cohort from "./cohorts/page"; // keep this from cohort branch
 
 export default function Home() {
   return (
@@ -28,13 +28,6 @@ export default function Home() {
       <section className="py-20">
         <Container className="flex flex-col lg:flex-row justify-between gap-12">
           <AboutSection />
-        </Container>
-      </section>
-
-      {/* Cohort Section - from cohort branch */}
-      <section className="py-20 bg-white">
-        <Container>
-          <Cohort />
         </Container>
       </section>
 

@@ -30,8 +30,8 @@ const Aboutushero2 = () => {
   ];
   return (
     <>
-      <section className="w-full flex justify-center mt-[40px] ">
-        <div className="w-[90%] h-[572px]  flex flex-col ">
+      <section className="w-[1728px]  flex justify-center mt-[40px] ">
+        <div className="w-[1428px] h-[572px]  flex flex-col ">
           <div className="flex justify-between items-center ">
             <p className="font-bold text-[40px] w-[574px] text-[#02353C] leading-[120%] ">
               Cyncra{" "}
