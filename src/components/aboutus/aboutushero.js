@@ -4,11 +4,16 @@ import heroimage from "../../../public/assets/aboutus/svg/aboutushero/heroimg.sv
 
 import { ArrowRight } from "lucide-react";
 import Aboutushero2 from "../aboutus/aboutushero2";
+import { motion } from "framer-motion";
 
 const Aboutushero = () => {
   return (
     <>
-      <section className="w-[100%]  flex flex-col justify-center items-center h-auto  bg-[url('/assets/aboutus/svg/aboutushero/herobg.svg')] bg-no-repeat bg-center bg-cover pt-[140px] pb-[50px] ">
+      <motion.section className="w-[100%]  flex flex-col justify-center items-center h-auto  bg-[url('/assets/aboutus/svg/aboutushero/herobg.svg')] bg-no-repeat bg-center bg-cover pt-[140px] pb-[50px]"
+     initial={{ y: -100, opacity: 0 }}
+  whileInView={{ y: 0, opacity: 1 }}
+  transition={{  duration:1.5}}
+  viewport={{ once: false }} >
         <div className="w-[90%] xl:h-[609px]    ">
           <div className="flex justify-between lg:gap-[50px] xl:gap-0 items-center  ">
             <div className=" xl:h-[408px]  max-w-[751px]  ">
@@ -41,7 +46,7 @@ const Aboutushero = () => {
           </div>
         </div>
         <Aboutushero2 />
-      </section>
+      </motion.section>
     </>
   );
 };

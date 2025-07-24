@@ -4,11 +4,16 @@ import frame2 from "../../../public/assets/aboutus/svg/workflow/Frame2.svg";
 import frame3 from "../../../public/assets/aboutus/svg/workflow/Frame3.svg";
 
 import Design from "./design";
+import { motion } from "framer-motion";
 
 const Workflow = () => {
   return (
     <>
-      <section className="w-[100%]  pt-[83px] flex justify-center items-center xl:h-[1300px] lg:pb-[50px] xl:pb-0 bg-[#02353C]">
+      <motion.section className="w-[100%]  pt-[83px] flex justify-center items-center xl:h-[1300px] lg:pb-[50px] xl:pb-0 bg-[#02353C]"
+     initial={{ opacity: 0, y: 100 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1.5 }}
+  viewport={{ once: false }}>
         <div className="w-[90%] xl:h-[1176px]  flex flex-col xl:gap-[75px] lg:gap-[30px] ">
           <div className="flex justify-between items-center">
             <p className="xl:text-[40px] lg:text-[32px] leading-[120%] xl:w-[512px] lg:w-[400px] h-[96px] text-[#E6FAFC]">
@@ -56,7 +61,7 @@ const Workflow = () => {
             subtext="At the core of every successful project lies through research. Ou web agency prioritizes understanding your audience, market trends and industry insights to craft digital solutions that resonant with your goals. our system optimizes every steps, saving time and boosting productivity. whether handling simple tasks or managing complex projects."
           />
         </div>
-      </section>
+      </motion.section>
     </>
   );
 };
