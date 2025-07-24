@@ -72,11 +72,16 @@ const Testimonial = () => {
   };
   return (
     <>
-      <motion.section className="w-[100%] pl-[53px]  flex justify-center about-bg items-center h-[720px]"
-           initial={{ opacity: 0, y: 100 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  transition={{ duration: 2 }}
-  viewport={{ once: false }}>
+
+      <motion.section
+        className="w-[100%] pl-[53px]  flex justify-center about-bg items-center h-[720px]"
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 2 }}
+        viewport={{ once: false }}
+      >
+
+
         <div className="w-[100%]  h-[600px]  flex gap-[116px]">
           <div className="w-[239px]  h-[348px] ">
             <div className="flex justify-center items-center bg-[#02353C] w-[239px] h-[185px] ">

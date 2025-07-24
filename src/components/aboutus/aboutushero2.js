@@ -33,14 +33,14 @@ const Aboutushero2 = () => {
       <section className="w-[100%]  flex justify-center mt-[40px] ">
         <div className="w-[90%] h-[572px]  flex flex-col ">
           <div className="flex justify-between items-center ">
-            <p className="font-bold xl:text-[40px] lg:text-[32px] w-[574px] text-[#02353C] leading-[120%] ">
+            <p className="font-bold xl:text-[40px] lg:text-[32px] lg:w-[474px] xl:w-[574px] text-[#02353C] leading-[120%] ">
               Cyncra{" "}
               <span className="font-normal">
                 knows that work shapes our future - so we make sure
               </span>{" "}
               <span className="text-[#FFC857] ">yours counts.</span>
             </p>
-            <p className="w-[400px] text-[20px] leading-[120%] text-[#02353C] tracking-[5%] ">
+            <p className="max-w-[400px] text-[20px] leading-[120%] text-[#02353C] tracking-[5%] ">
               Our internship helps you build skills, confidence and connections
               for a career that matters.
             </p>

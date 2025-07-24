@@ -9,11 +9,16 @@ import { motion } from "framer-motion";
 const Workflow = () => {
   return (
     <>
-      <motion.section className="w-[100%]  pt-[83px] flex justify-center items-center xl:h-[1300px] lg:pb-[50px] xl:pb-0 bg-[#02353C]"
-     initial={{ opacity: 0, y: 100 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  transition={{ duration: 1.5 }}
-  viewport={{ once: false }}>
+
+      <motion.section
+        className="w-[100%]  pt-[83px] flex justify-center items-center xl:h-[1300px] lg:pb-[50px] xl:pb-0 bg-[#02353C]"
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.5 }}
+        viewport={{ once: false }}
+      >
+
+ 
         <div className="w-[90%] xl:h-[1176px]  flex flex-col xl:gap-[75px] lg:gap-[30px] ">
           <div className="flex justify-between items-center">
             <p className="xl:text-[40px] lg:text-[32px] leading-[120%] xl:w-[512px] lg:w-[400px] h-[96px] text-[#E6FAFC]">
@@ -51,7 +56,13 @@ const Workflow = () => {
                   tasks or managing complex projects.
                 </p>
               </div>
-              <Image src={frame2} alt="image" className="xl:w-[432px] lg:w-[300px] h-[266px]" />
+
+              <Image
+                src={frame2}
+                alt="image"
+                className="xl:w-[432px] lg:w-[300px] h-[266px]"
+              />
+
             </div>
           </div>
 
