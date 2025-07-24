@@ -7,6 +7,7 @@ import image1 from "../../../public/assets/aboutus/svg/testimonial/Image1.svg";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Rating from "./rating";
 import { useRef } from "react";
+import { motion } from "framer-motion";
 
 const Testimonial = () => {
   const testimonies = [
@@ -71,7 +72,11 @@ const Testimonial = () => {
   };
   return (
     <>
-      <section className="w-full pl-[153px]  flex justify-center about-bg items-center h-[720px]">
+      <motion.section className="w-[100%] pl-[53px]  flex justify-center about-bg items-center h-[720px]"
+           initial={{ opacity: 0, y: 100 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 2 }}
+  viewport={{ once: false }}>
         <div className="w-[100%]  h-[600px]  flex gap-[116px]">
           <div className="w-[239px]  h-[348px] ">
             <div className="flex justify-center items-center bg-[#02353C] w-[239px] h-[185px] ">
@@ -127,7 +132,7 @@ const Testimonial = () => {
             ))}
           </div>
         </div>
-      </section>
+      </motion.section>
     </>
   );
 };

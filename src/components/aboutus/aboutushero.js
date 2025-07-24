@@ -4,25 +4,30 @@ import heroimage from "../../../public/assets/aboutus/svg/aboutushero/heroimg.sv
 
 import { ArrowRight } from "lucide-react";
 import Aboutushero2 from "../aboutus/aboutushero2";
+import { motion } from "framer-motion";
 
 const Aboutushero = () => {
   return (
     <>
-      <section className="w-full px-[150px] flex flex-col justify-center items-center h-auto  bg-[url('/assets/aboutus/svg/aboutushero/herobg.svg')] bg-no-repeat bg-center bg-cover  pt-[150px] pb-8 ">
-        <div className="w-[1428px] h-[609px] ">
-          <div className="flex justify-between items-center ">
-            <div className="w-[760px] h-[408px]  ">
-              <h1 className="text-[60px] font-normal text-black ">
+      <motion.section className="w-[100%]  flex flex-col justify-center items-center h-auto  bg-[url('/assets/aboutus/svg/aboutushero/herobg.svg')] bg-no-repeat bg-center bg-cover pt-[140px] pb-[50px]"
+     initial={{ y: -100, opacity: 0 }}
+  whileInView={{ y: 0, opacity: 1 }}
+  transition={{  duration:1.5}}
+  viewport={{ once: false }} >
+        <div className="w-[90%] xl:h-[609px]    ">
+          <div className="flex justify-between lg:gap-[50px] xl:gap-0 items-center  ">
+            <div className=" xl:h-[408px]  max-w-[751px]  ">
+              <h1 className="xl:text-[60px]  lg:text-[44px] font-normal text-black ">
                 Our{" "}
                 <span className="font-bold text-[#02353C] leading-[140%] ">
                   Story
                 </span>{" "}
-                the Journey That’s Shaped{" "}
+                the Journey That's Shaped{" "}
                 <span className="font-bold leading-[140%]  text-[#FFC857]  ">
                   Our Success
                 </span>
               </h1>
-              <p className="text-[20px] leading-[140%]  tracking-[5%] text-[#02353C] w-[711px] mt-[30px]">
+              <p className="text-[20px] leading-[140%]   tracking-[5%] text-[#02353C]  max-w-[657px]  xl:mt-[30px] lg:mt-[10px]">
                 At Cyncra we’re more than just an internship program, We’re a
                 launchpad for tomorrow’s top tech talents. Our mission is to
                 empower ambitious learners to transform their skills, gain real
@@ -36,12 +41,12 @@ const Aboutushero = () => {
             <Image
               src={heroimage}
               alt="about us hero image"
-              className=""
+              className="xl:h-[600px]  min-w-[350px] lg:h-[500px]"
             />
           </div>
         </div>
         <Aboutushero2 />
-      </section>
+      </motion.section>
     </>
   );
 };
