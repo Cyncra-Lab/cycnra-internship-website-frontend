@@ -92,11 +92,11 @@ const Interns = () => {
               >
                 <div className="w-[264px] h-fit px-[40px] py-[32px]">
                   <Image
-                    src={member.img}
-                    alt={member.name}
-                    width={264}
-                    height={192}
-                    className="rounded-md w-full h-48 object-cover mb-4"
+                  src={member.img}
+                  alt={member.name}
+                  width={264}
+                  height={192}
+                  className="rounded-md w-full h-48 object-cover mb-4"
                   />
                   <div className="w-full h-fit gap-[12px]">
                     <h3 className="width-[264px] height-[28px] font-bold text-[#E6FAFC] text-[20px] leading-[1.4] tracking-[0.15em] uppercase">
@@ -133,7 +133,7 @@ const Interns = () => {
                   width={40}
                   height={40}
                   alt="Left Arrow"
-                  style={{ height: "auto" }}
+                  style={{ height: "auto", width: "auto" }}
                 />
               </div>
             </motion.button>
@@ -149,7 +149,7 @@ const Interns = () => {
                   width={40}
                   height={40}
                   alt="Right Arrow"
-                  style={{ height: "auto" }}
+                  style={{ height: "auto", width: "auto" }}
                 />
               </div>
             </motion.button>
