@@ -8,7 +8,7 @@ import Aboutushero2 from "../aboutus/aboutushero2";
 const Aboutushero = () => {
   return (
     <>
-      <section className="w-[1728px] px-[150px] flex flex-col justify-center items-center h-auto  bg-[url('/assets/aboutus/svg/aboutushero/herobg.svg')] bg-no-repeat bg-center bg-cover  pt-[150px] pb-[50px] ">
+      <section className="w-full px-[150px] flex flex-col justify-center items-center h-auto  bg-[url('/assets/aboutus/svg/aboutushero/herobg.svg')] bg-no-repeat bg-center bg-cover  pt-[150px] pb-8 ">
         <div className="w-[1428px] h-[609px] ">
           <div className="flex justify-between items-center ">
             <div className="w-[760px] h-[408px]  ">
