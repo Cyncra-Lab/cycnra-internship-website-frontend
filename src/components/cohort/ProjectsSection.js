@@ -1,0 +1,112 @@
+"use client";
+
+import { FaArrowRight } from "react-icons/fa6";
+import Image from "next/image";
+import { RiArrowRightLine } from "react-icons/ri";
+import { motion } from "framer-motion";
+
+const projects = [
+  {
+    title: "Project One",
+    subTitle: "Task management web App",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting  Lorem Ipsum is simply dummy text of the printing and typesetting  Lorem Ipsum is simply dummy text of the printing and typesetting  Lorem Ipsum is simply dummy text of the printing and typesetting  Lorem Ipsum is simply dummy text of the printing and typesetting",
+    img: "/project1.jpg",
+  },
+  {
+    title: "Project Two",
+    subTitle: "E-Commerce Platform",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting  Lorem Ipsum is simply dummy text of the printing and typesetting  Lorem Ipsum is simply dummy text of the printing and typesetting  Lorem Ipsum is simply dummy text of the printing and typesetting  Lorem Ipsum is simply dummy text of the printing and typesetting ",
+    img: "/project2.jpg",
+  },
+  {
+    title: "Project Three",
+    subTitle: "Shopping Website",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting  Lorem Ipsum is simply dummy text of the printing and typesetting  Lorem Ipsum is simply dummy text of the printing and typesetting  Lorem Ipsum is simply dummy text of the printing and typesetting  Lorem Ipsum is simply dummy text of the printing and typesetting",
+    img: "/project3.jpg",
+  },
+];
+
+const ProjectsSection = () => (
+  <>
+    <section
+      className="bg-[#02353C] py-15 text-white px-[100px] w-full max-w-[1429px] h-fit
+    "
+    >
+      <div className="max-w-[1227px] w-full text-white text-center pt-12 px-4 pb-10">
+        <h1 className="text-[64px] max-w-[1227px] w-full font-bold mb-2 leading-[1.2]">
+          Frontend Development Cohort-Q1 2025
+        </h1>
+        <h3 className="max-w-[1227px] w-full mb-2 leading-[1.4] text-[32px] tracking-[0.05em] text-[#E6FAFCBD]">
+          July 2025 - August 2025
+        </h3>
+        <h3 className="max-w-[1227px] w-full text-[32px] tracking-[0.05em] font-normal mx-auto text-[#E6FAFCBD]">
+          Focused on building responsive and user-friendly web interfaces.
+        </h3>
+      </div>
+
+      <div className="w-full h-fit gap-[2.3125rem]">
+        <h3 className="text-[26px] font-semibold mb-6 leading-[1.2] flex items-center gap-4">
+          <RiArrowRightLine /> Projects Worked On:
+        </h3>
+        <div className="grid md:grid-cols-3 gap-[2rem] w-full h-fit">
+          {projects.map((proj, index) => (
+            <div
+              key={index}
+              className="w-full max-w-[455px] bg-[#02353C] text-white-100 rounded-3xl pb-8 border border-white/20"
+            >
+              <div className="w-full max-w-[455px]">
+                <Image
+                  src={proj.img}
+                  alt={proj.title}
+                  width={455}
+                  height={307}
+                  className="rounded-t-3xl mb-4 w-full h-40 object-cover"
+                />
+              </div>
+              <div className="px-5 py-1 max-w-[377px] h-fit">
+                <h6 className="w-[377px] text-[1rem] font-normal mb-2 tracking-[0.15em] leading-[1.4]">
+                  {proj.title}
+                </h6>
+                <h6 className="w-[377px] text-[1rem] font-normal mb-2 tracking-[0.15em] leading-[1.4]">
+                  {proj.subTitle}
+                </h6>
+                <p className="w-full text-[1rem] text-[#CCD6D8] font-normal mb-4 tracking-[-0.02em] leading-[1.4]">
+                  {proj.description}
+                </p>
+                {/* <button className="w-[195px] h-fit flex items-center justify-center gap-[10px] bg-[#FFC857] text-black p-[10px] mb-4 rounded-[70px] hover:bg-[#f4c86e] cursor-pointer">
+                  View Project <FaArrowRight />
+                </button> */}
+                <motion.button
+                  className="w-[195px] h-fit flex items-center justify-center gap-[10px] bg-[#FFC857] text-black p-[10px] mb-4 rounded-[70px] hover:bg-[#f4c86e] cursor-pointer"
+                  whileHover={{
+                    scale: 1.05,
+                    y: -2,
+                    transition: {
+                      type: "spring",
+                      stiffness: 300,
+                      damping: 15,
+                    },
+                  }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  View Project
+                  <motion.span
+                    whileHover={{ x: 5 }}
+                    transition={{ type: "spring", stiffness: 300, damping: 10 }}
+                  >
+                    <FaArrowRight />
+                  </motion.span>
+                </motion.button>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  </>
+);
+
+export default ProjectsSection;
