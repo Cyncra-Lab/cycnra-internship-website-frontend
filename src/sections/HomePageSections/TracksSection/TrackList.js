@@ -14,7 +14,7 @@ export default function TrackList() {
       {courses.map((course) => (
         <li
           key={course.id}
-          className="relative lg:text-5xl border-b-2 pt-10 pb-5 flex justify-between items-center cursor-pointer hover:text-[var(--text-light-gray)] transition-all duration-300"
+          className="relative lg:text-5xl border-b-2 pt-20 pb-8 flex justify-between items-center cursor-pointer hover:text-[var(--text-light-gray)] transition-all duration-300"
           onMouseEnter={() => setHoveredTrackId(course.id)}
         >
           <span className="font-bold">{course.title}</span>

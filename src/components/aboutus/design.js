@@ -6,6 +6,7 @@ const Design = ({ frame1, maintext, subtext }) => {
     <>
       <div className="flex justify-between items-center">
         <div className="flex  gap-[30px] items-center ">
+
           <Image
             src={frame1}
             alt="image"
@@ -19,6 +20,7 @@ const Design = ({ frame1, maintext, subtext }) => {
               {subtext}
             </p>
           </div>
+
         </div>
 
         <button className="xl:h-[232px] lg:h-[192px] focus:outline-2 focus:outline-white border-white  hover:bg-opacity-65 hover:border-[#FFC857] w-[78px] flex items-center justify-center border-[2px] rounded-[50px] ">
