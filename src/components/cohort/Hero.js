@@ -18,7 +18,7 @@ const heroVariants = {
 };
 
 const Hero = () => (
-  <section className="h-[40rem] w-full bg-[linear-gradient(rgba(2,53,60,0.4),rgba(2,53,60,0.4)),url('/Hero.jpg')] px-[5rem] bg-cover bg-center flex items-end mt-[10.5rem]">
+  <section className="h-[60rem] w-full bg-[linear-gradient(rgba(2,53,60,0.4),rgba(2,53,60,0.4)),url('/Hero.jpg')] px-[5rem] bg-cover bg-center flex items-end">
     {/* Overlay text */}
     <motion.div
       variants={heroVariants}

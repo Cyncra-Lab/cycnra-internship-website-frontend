@@ -13,16 +13,21 @@ export default function ContactUs() {
           {/* Left Section */}
           <div className="w-[45%] py-17">
             <button className="bg-[var(--header-background)] flex items-center gap-2 py-4 px-6 rounded-[12px] text-[var(--text-white)]">
-              <Image src="/icons/arrow_down.svg" width={32} height={32} alt="arrow-down" />
+              <Image
+                src="/icons/arrow_down.svg"
+                width={32}
+                height={32}
+                alt="arrow-down"
+              />
               Contact Us
             </button>
             <h2 className="text-[var(--header-background)] text-5xl font-bold mt-8">
-              We're Here to Help
+              {" We're Here to Help"}
             </h2>
             <p className="text-[var(--header-background)] text-xl opacity-67 mt-8">
-              Have questions about our internship program? Reach out and we'll
+              {`Have questions about our internship program? Reach out and we'll
               get back to you, Need help with application or want to know more?
-              We'd love to hear from you!
+              We'd love to hear from you!`}
             </p>
 
             <div className="mt-8">
@@ -97,7 +102,11 @@ export default function ContactUs() {
                 <p className="mb-5 text-xl font-bold">Select Subject?</p>
                 <div className="flex gap-6">
                   <label className="flex items-center gap-2">
-                    <input type="radio" name="subject" value="General Inquiry" />
+                    <input
+                      type="radio"
+                      name="subject"
+                      value="General Inquiry"
+                    />
                     General Inquiry
                   </label>
                   <label className="flex items-center gap-2">
@@ -130,17 +139,20 @@ export default function ContactUs() {
 
             <div className="mt-10 text-[var(--text-white)] flex justify-between space-y-2">
               <a href="tel:+01233456789" className="flex items-center gap-3">
-                <BiSolidPhoneCall className="text-2xl"/>
+                <BiSolidPhoneCall className="text-2xl" />
                 +0123 345 6789
               </a>
-              <a href="mailto:cyncra@gmail.com" className="flex items-center gap-3">
-                <MdEmail className="text-2xl"/>
+              <a
+                href="mailto:cyncra@gmail.com"
+                className="flex items-center gap-3"
+              >
+                <MdEmail className="text-2xl" />
                 cyncra@gmail.com
               </a>
               <p className="flex items-center gap-3">
-                <FaLocationDot className="text-2xl"/>
+                <FaLocationDot className="text-2xl" />
                 Lagos State, Nigeria
-             </p>
+              </p>
             </div>
 
             <div className="mt-8 flex justify-between items-center gap-4">
@@ -152,23 +164,23 @@ export default function ContactUs() {
               />
               <div className="flex gap-5">
                 <Image
-                src="/icons/facebook.svg"
-                alt="Facebook"
-                width={35}
-                height={35}
-              />
-              <Image
-                src="/icons/linkedin.svg"
-                alt="LinkedIn"
-                width={35}
-                height={35}
-              />
-              <Image
-                src="/icons/twitter.svg"
-                alt="Twitter"
-                width={35}
-                height={35}
-              />
+                  src="/icons/facebook.svg"
+                  alt="Facebook"
+                  width={35}
+                  height={35}
+                />
+                <Image
+                  src="/icons/linkedin.svg"
+                  alt="LinkedIn"
+                  width={35}
+                  height={35}
+                />
+                <Image
+                  src="/icons/twitter.svg"
+                  alt="Twitter"
+                  width={35}
+                  height={35}
+                />
               </div>
             </div>
           </div>

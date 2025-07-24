@@ -9,9 +9,6 @@ import NavBar from "@/components/NavBar";
 const Cohort = () => {
   return (
     <div>
-      <div className="bg-[url('/images/navBG.png')] bg-cover bg-center fixed top-0 left-0 w-full h-[168px] z-20">
-        <NavBar />
-      </div>
       <Hero />
       {/* <CohortInfo /> */}
       <ProjectsSection />
