@@ -4,6 +4,7 @@ import { FaArrowRight } from "react-icons/fa6";
 import Image from "next/image";
 import { RiArrowRightLine } from "react-icons/ri";
 import { motion } from "framer-motion";
+import NavBar from "../NavBar";
 
 const projects = [
   {
@@ -31,23 +32,21 @@ const projects = [
 
 const ProjectsSection = () => (
   <>
-    <section
-      className="bg-[#02353C] py-15 text-white px-[100px] w-full max-w-[1429px] h-fit
-    "
-    >
-      <div className="max-w-[1227px] w-full text-white text-center pt-12 px-4 pb-10">
-        <h1 className="text-[64px] max-w-[1227px] w-full font-bold mb-2 leading-[1.2]">
+    <NavBar />
+    <section className="bg-[#02353C] flex flex-col items-center justify-center py-15 text-white px-20 w-full h-fit">
+      <div className="w-full text-white flex flex-col items-center justify-center mt-5">
+        <h1 className="text-[64px] font-bold mb-2 leading-[1.2]">
           Frontend Development Cohort-Q1 2025
         </h1>
-        <h3 className="max-w-[1227px] w-full mb-2 leading-[1.4] text-[32px] tracking-[0.05em] text-[#E6FAFCBD]">
+        <h3 className="mb-2 leading-[1.4] text-[32px] tracking-[0.05em] text-[#E6FAFCBD]">
           July 2025 - August 2025
         </h3>
-        <h3 className="max-w-[1227px] w-full text-[32px] tracking-[0.05em] font-normal mx-auto text-[#E6FAFCBD]">
+        <h3 className="text-[32px] tracking-[0.05em] font-normal mx-auto text-[#E6FAFCBD]">
           Focused on building responsive and user-friendly web interfaces.
         </h3>
       </div>
 
-      <div className="w-full h-fit gap-[2.3125rem]">
+      <div className="w-full h-fit mt-20 px-20 pb-20">
         <h3 className="text-[26px] font-semibold mb-6 leading-[1.2] flex items-center gap-4">
           <RiArrowRightLine /> Projects Worked On:
         </h3>
@@ -63,7 +62,7 @@ const ProjectsSection = () => (
                   alt={proj.title}
                   width={455}
                   height={307}
-                  className="rounded-t-3xl mb-4 w-full h-40 object-cover"
+                  className="rounded-t-3xl mb-4 w-full h-70 object-cover"
                 />
               </div>
               <div className="px-5 py-1 max-w-[377px] h-fit">

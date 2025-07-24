@@ -56,8 +56,8 @@ const Interns = () => {
   };
 
   return (
-    <section className="bg-white py-16 px-[100px] w-full max-w-[1427px] h-fit">
-      <h3 className="text-xl font-semibold mb-8 flex items-center gap-2">
+    <section className="bg-white py-16 px-20 w-full h-fit">
+      <h3 className="text-xl px-20 font-semibold mb-8 flex items-center gap-2">
         <Image
           src="/images/arrow-right.png"
           alt="Right arrow"
@@ -67,7 +67,7 @@ const Interns = () => {
         Interns:
       </h3>
 
-      <div className="max-w-7xl mx-auto">
+      <div className="px-20">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-10 gap-4">
           <h3 className="text-[36px] leading-[1.4] tracking-[-0.02em] text-[#02353C] font-bold">
             Engage with Our
@@ -80,7 +80,7 @@ const Interns = () => {
         </div>
 
         {/* Scrollable Cards */}
-        <div className="relative">
+        <div className="relative flex flex-col items-center justify-center">
           <div
             ref={sliderRef}
             className="flex gap-6 overflow-x-auto scroll-smooth no-scrollbar pb-4"
