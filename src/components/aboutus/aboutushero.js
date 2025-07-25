@@ -37,7 +37,7 @@ const Aboutushero = () => {
                 </p>
 
                 <button className="sm:w-[234px] w-[118px]  mt-[20px] focus:outline-2 outline-[orange] h-[33px] sm:h-[56px] bg-[#FFC857] transition duration-150 hover:text-[#FFC857] hover:bg-[#02353C] flex lg:justify-between justify-center items-center lg:px-[20px]  rounded-[70px] border-0 text-[#02353C] font-bold text-[14px] sm:text-[16px] leading-[140%] -tracking-[2%]">
-                  Apply Now <ArrowRight size={20} color="black sm:block hidden  " />
+                  Apply Now <ArrowRight size={20} color="black   " />
                 </button>
               </div>
               <Image

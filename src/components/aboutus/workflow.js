@@ -11,7 +11,7 @@ const Workflow = () => {
     <>
 
       <section
-        className="w-[100%] xl:pl-20 lg:px-10 pt-[83px] flex justify-center items-center  lg:pb-[50px]  bg-[#02353C]"
+        className="w-[100%] xl:pl-20 lg:px-10 md:pt-[83px] pt-[40px] flex justify-center items-center  lg:pb-[50px]  bg-[#02353C]"
       
       >
 
@@ -21,11 +21,11 @@ const Workflow = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.5 }}
         viewport={{ once: false }}>
-          <div className="flex justify-between items-center">
-            <p className=" lg:text-[32px] leading-[120%] xl:w-[512px] lg:w-[400px] h-[96px] text-[#E6FAFC]">
+          <div className="flex md:justify-between md:items-center md:flex-row flex-col gap-[10px] md:gap-0 ">
+            <p className=" lg:text-[32px] leading-[120%] text-[20px]  xl:w-[512px] lg:w-[400px] text-[#E6FAFC]">
               Seamless, Flexible and Efficient Workflow
             </p>
-            <p className="w-[535px]  lg:text-[18px] leading-[120%] text-[#E6FAFC] tracking-[5%]">
+            <p className="w-[535px]  lg:text-[18px] text-[14px] leading-[120%] text-[#E6FAFC] tracking-[5%]">
               Our workflow is designed to be seamless, flexible and highly
               efficient. It adapts to your needs, ensuring smooth processes from
               start to finish. whether you’re handling simple tasks or managing
