@@ -12,12 +12,10 @@ const Aboutushero = () => {
 
       <motion.section
         className="w-[100%]  flex flex-col justify-center items-center h-auto  bg-[url('/assets/aboutus/svg/aboutushero/herobg.svg')] bg-no-repeat bg-center bg-cover pt-[150px] pb-[50px]"
-        initial={{ y: -100, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 1.5 }}
+      
       >
 
-        <div className="w-[90%] xl:h-[609px]    ">
+        <motion.div className="w-[90%] xl:h-[609px]    ">
           <div className="flex justify-between lg:gap-[50px] xl:gap-0 items-center  ">
             <div className=" xl:h-[408px]  max-w-[751px]  ">
               <h1 className="xl:text-[60px]  lg:text-[44px] font-normal text-black ">
@@ -47,7 +45,7 @@ const Aboutushero = () => {
               className="xl:h-[600px]  min-w-[300px] lg:h-[500px]"
             />
           </div>
-        </div>
+        </motion.div>
         <Aboutushero2 />
       </motion.section>
     </>
