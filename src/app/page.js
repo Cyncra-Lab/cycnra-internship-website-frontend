@@ -4,7 +4,6 @@ import Container from "@/components/Container";
 import HeroSection from "@/sections/HomePageSections/HeroSection/HeroSection";
 import TracksSection from "@/sections/HomePageSections/TracksSection/TracksSection";
 import AboutSection from "@/sections/HomePageSections/AboutSection/AboutSection";
-import Cohort from "./cohorts/page"; // keep this from cohort branch
 
 export default function Home() {
   return (
