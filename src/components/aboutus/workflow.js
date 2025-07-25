@@ -9,18 +9,14 @@ import { motion } from "framer-motion";
 const Workflow = () => {
   return (
     <>
-
-      <section
-        className="w-[100%] xl:pl-20 lg:px-10 md:pt-[83px] pt-[40px] flex justify-center items-center  lg:pb-[50px]  bg-[#02353C]"
-      
-      >
-
- 
-        <motion.div className="w-[90%] flex flex-col  lg:gap-[30px] "
-        initial={{ opacity: 0, y: 100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1.5 }}
-        viewport={{ once: false }}>
+      <section className="w-[100%]  lg:px-20 md:pt-[83px] pt-[40px] flex justify-center items-center  lg:pb-[50px]  bg-[#02353C]">
+        <motion.div
+          className="w-[90%] flex flex-col  lg:gap-[30px] "
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.5 }}
+          viewport={{ once: false }}
+        >
           <div className="flex md:justify-between md:items-center md:flex-row flex-col gap-[10px] md:gap-0 ">
             <p className=" lg:text-[32px] leading-[120%] text-[20px]  xl:w-[512px] lg:w-[400px] text-[#E6FAFC]">
               Seamless, Flexible and Efficient Workflow
@@ -63,7 +59,6 @@ const Workflow = () => {
                 alt="image"
                 className=" lg:w-[300px] h-[266px]"
               />
-
             </div>
           </div>
 

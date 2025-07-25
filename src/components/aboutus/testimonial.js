@@ -72,17 +72,14 @@ const Testimonial = () => {
   };
   return (
     <>
-
-      <motion.section
-        className="w-[100%] xl:pl-40 lg:pl-20  flex justify-center about-bg items-center h-[720px]"
-        initial={{ opacity: 0, y: 100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 2 }}
-        viewport={{ once: false }}
-      >
-
-
-        <div className="w-[100%]  h-[600px]  flex gap-[116px]">
+      <section className="w-[100%]  lg:pl-40  flex justify-center about-bg items-center h-[720px]">
+        <motion.div
+          className="w-[100%]  h-[600px]  flex gap-[116px]"
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 2 }}
+          viewport={{ once: false }}
+        >
           <div className="w-[239px]  h-[348px] ">
             <div className="flex justify-center items-center bg-[#02353C] w-[239px] h-[185px] ">
               <Image src={quote} alt="left quote icon" />
@@ -136,8 +133,8 @@ const Testimonial = () => {
               </div>
             ))}
           </div>
-        </div>
-      </motion.section>
+        </motion.div>
+      </section>
     </>
   );
 };

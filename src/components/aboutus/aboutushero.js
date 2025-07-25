@@ -11,7 +11,7 @@ const Aboutushero = () => {
     <>
       <section className="  bg-[url('/assets/aboutus/svg/aboutushero/herobg.svg')] bg-no-repeat bg-center bg-cover ">
         <motion.div
-          className="w-[100%] xl:px-20 sm:px-10  px-5 flex flex-col justify-center items-center h-auto pt-[150px] lg:pb-[50px]"
+          className="w-[100%] lg:px-20 sm:px-10  px-5 flex flex-col justify-center items-center h-auto pt-[150px] lg:pb-[50px]"
           initial={{ y: -100, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 1.5 }}
