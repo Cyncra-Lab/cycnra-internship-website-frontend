@@ -10,16 +10,17 @@ const Workflow = () => {
   return (
     <>
 
-      <motion.section
-        className="w-[100%] px-20 pt-[83px] flex justify-center items-center xl:h-[1300px] lg:pb-[50px] xl:pb-0 bg-[#02353C]"
-        initial={{ opacity: 0, y: 100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1.5 }}
-        viewport={{ once: false }}
+      <section
+        className="w-[100%] xl:px-20 lg:px-10 pt-[83px] flex justify-center items-center xl:h-[1300px] lg:pb-[50px] xl:pb-0 bg-[#02353C]"
+      
       >
 
  
-        <div className="w-[90%] xl:h-[1176px]  flex flex-col xl:gap-[75px] lg:gap-[30px] ">
+        <motion.div className="w-[90%] xl:h-[1176px]  flex flex-col xl:gap-[75px] lg:gap-[30px] "
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.5 }}
+        viewport={{ once: false }}>
           <div className="flex justify-between items-center">
             <p className="xl:text-[40px] lg:text-[32px] leading-[120%] xl:w-[512px] lg:w-[400px] h-[96px] text-[#E6FAFC]">
               Seamless, Flexible and Efficient Workflow
@@ -71,8 +72,8 @@ const Workflow = () => {
             maintext="Research"
             subtext="At the core of every successful project lies through research. Ou web agency prioritizes understanding your audience, market trends and industry insights to craft digital solutions that resonant with your goals. our system optimizes every steps, saving time and boosting productivity. whether handling simple tasks or managing complex projects."
           />
-        </div>
-      </motion.section>
+        </motion.div>
+      </section>
     </>
   );
 };
