@@ -9,6 +9,7 @@ import { motion } from "framer-motion";
 const Aboutushero = () => {
   return (
     <>
+
       <section className="  bg-[url('/assets/aboutus/svg/aboutushero/herobg.svg')] bg-no-repeat bg-center bg-cover ">
         <motion.div
           className="w-[100%] lg:px-20 sm:px-10  px-5 flex flex-col justify-center items-center h-auto pt-[150px] lg:pb-[50px]"
@@ -45,6 +46,7 @@ const Aboutushero = () => {
                 alt="about us hero image"
                 className="xl:h-[600px]  min-w-[300px] lg:h-[500px]"
               />
+=
             </div>
           </div>
           <Aboutushero2 />

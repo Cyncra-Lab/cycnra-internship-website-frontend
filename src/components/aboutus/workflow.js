@@ -9,6 +9,7 @@ import { motion } from "framer-motion";
 const Workflow = () => {
   return (
     <>
+
       <section className="w-[100%]  lg:px-20 md:pt-[83px] pt-[40px] flex justify-center items-center  lg:pb-[50px]  bg-[#02353C]">
         <motion.div
           className="w-[90%] flex flex-col  lg:gap-[30px] "
@@ -19,6 +20,7 @@ const Workflow = () => {
         >
           <div className="flex md:justify-between md:items-center md:flex-row flex-col gap-[10px] md:gap-0 ">
             <p className=" lg:text-[32px] leading-[120%] text-[20px]  xl:w-[512px] lg:w-[400px] text-[#E6FAFC]">
+
               Seamless, Flexible and Efficient Workflow
             </p>
             <p className="w-[535px]  lg:text-[18px] text-[14px] leading-[120%] text-[#E6FAFC] tracking-[5%]">
