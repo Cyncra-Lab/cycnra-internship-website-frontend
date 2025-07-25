@@ -11,7 +11,7 @@ const Aboutushero = () => {
     <>
 
       <motion.section
-        className="w-[100%]  flex flex-col justify-center items-center h-auto  bg-[url('/assets/aboutus/svg/aboutushero/herobg.svg')] bg-no-repeat bg-center bg-cover pt-[150px] pb-[50px]"
+        className="w-[100%] px-20  flex flex-col justify-center items-center h-auto  bg-[url('/assets/aboutus/svg/aboutushero/herobg.svg')] bg-no-repeat bg-center bg-cover pt-[150px] pb-[50px]"
       
       >
 

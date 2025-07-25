@@ -74,7 +74,7 @@ const Testimonial = () => {
     <>
 
       <motion.section
-        className="w-[100%] pl-[53px]  flex justify-center about-bg items-center h-[720px]"
+        className="w-[100%] pl-80  flex justify-center about-bg items-center h-[720px]"
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 2 }}

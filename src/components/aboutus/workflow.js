@@ -11,7 +11,7 @@ const Workflow = () => {
     <>
 
       <motion.section
-        className="w-[100%]  pt-[83px] flex justify-center items-center xl:h-[1300px] lg:pb-[50px] xl:pb-0 bg-[#02353C]"
+        className="w-[100%] px-20 pt-[83px] flex justify-center items-center xl:h-[1300px] lg:pb-[50px] xl:pb-0 bg-[#02353C]"
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.5 }}
