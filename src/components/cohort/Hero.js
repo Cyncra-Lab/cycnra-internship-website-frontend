@@ -18,7 +18,7 @@ const heroVariants = {
 };
 
 const Hero = () => (
-  <section className="h-[34rem] md:h-[32rem] lg:h-[60rem] w-full bg-[linear-gradient(rgba(2,53,60,0.4),rgba(2,53,60,0.4)),url('/Hero.jpg')] px-[5rem] bg-cover bg-center flex items-end">
+  <section className="h-[40rem] lg:h-[46rem] w-full bg-[linear-gradient(rgba(2,53,60,0.4),rgba(2,53,60,0.4)),url('/Hero.jpg')] px-4 sm:px-[5rem] bg-cover bg-center flex items-end">
     {/* Overlay text */}
     <motion.div
       variants={heroVariants}
@@ -29,7 +29,7 @@ const Hero = () => (
       <h1 className="text-[40px] md:text-[50px] text-[#E6FAFC] font-bold mb-2">
         OUR <span className="text-[#FFC857]">COHORT</span>
       </h1>
-      <h4 className="my-8 border-l-4 border-[#ffc857] pl-4 leading-[1.4] font-bold tracking-[0.05em] text-[24px] md:text-[20px] text-[#E6FAFC] w-full max-w-[728px] h-fit mx-auto">
+      <h4 className="my-8 border-l-4 border-[#ffc857] pl-4 leading-[1.4] font-bold tracking-[0.05em] text-[20px] md:text-[24px] text-[#E6FAFC] w-full max-w-[728px] h-fit mx-auto">
         Explore our past and current internship cohorts, their innovative
         projects and the amazing interns who made them possible.
       </h4>

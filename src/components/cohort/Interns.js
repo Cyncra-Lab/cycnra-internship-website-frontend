@@ -56,8 +56,14 @@ const Interns = () => {
   };
 
   return (
-    <section className="bg-white py-16 px-20 w-full h-fit">
-      <h3 className="text-xl px-20 font-semibold mb-8 flex items-center gap-2">
+    <section
+      className="bg-white py-16 px-4 sm:px-6 md:px-10
+ w-full h-fit"
+    >
+      <h3
+        className="text-2xl px-4 sm:px-6 md:px-10
+ font-semibold mb-8 flex items-center gap-2"
+      >
         <Image
           src="/images/arrow-right.png"
           alt="Right arrow"
@@ -67,12 +73,15 @@ const Interns = () => {
         Interns:
       </h3>
 
-      <div className="px-20">
-        <div className="flex flex-col md:flex-col justify-between items-start md:items-center mb-10 gap-4">
-          <h3 className="text-[36px] md:text-[24px] leading-[1.4] tracking-[-0.02em] text-[#02353C] font-bold">
+      <div
+        className="px-4 sm:px-6 md:px-10
+"
+      >
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-10 gap-4">
+          <h3 className="text-[30px] md:text-[36px] leading-[1.4] tracking-[-0.02em] text-[#02353C] font-bold">
             Engage with Our
-            <br className="block md:hidden" />
-            <span className="md:inline">Creative Team</span>
+            <br className="block md:hidden lg:block" />
+            <span className="md:inline"> Creative Team</span>
           </h3>
           <p className="text-[21px] leading-[1.4] tracking-[-0.02em] text-[#02353C] max-w-md text-sm text-left font-normal">
             Meet our talented and dedicated <br /> cohort members and their
@@ -80,24 +89,24 @@ const Interns = () => {
           </p>
         </div>
 
-        {/* Scrollable Cards */}
+        {/* Cards */}
         <div className="relative flex flex-col items-center justify-center">
           <div
             ref={sliderRef}
             className="flex gap-6 overflow-x-auto overflow-y-hidden scroll-smooth pb-4 w-full max-w-full no-scrollbar"
           >
-            {interns.map((member, idx) => (
+            {interns.map((member, i) => (
               <div
-                key={idx}
-                className="w-[90vw] sm:w-[90vw] md:w-[90vw] lg:w-[344px] min-h-[420px] max-w-[344px] bg-[#02353C] text-white rounded-[12px] shadow-md flex-shrink-0"
+                key={i}
+                className="w-[88vw] sm:w-[80vw] md:w-[60vw] lg:w-[344px] min-h-[420px] max-w-[344px] bg-[#02353C] text-white rounded-[12px] shadow-md flex-shrink-0"
               >
                 <div className="w-full h-full px-[40px] py-[32px]">
                   <Image
-                  src={member.img}
-                  alt={member.name}
-                  width={264}
-                  height={192}
-                  className="rounded-md w-full h-48 object-cover mb-4"
+                    src={member.img}
+                    alt={member.name}
+                    width={264}
+                    height={192}
+                    className="rounded-md w-full h-48 object-cover mb-4"
                   />
                   <div className="w-full h-fit gap-[12px]">
                     <h3 className="width-[264px] height-[28px] font-bold text-[#E6FAFC] text-[20px] leading-[1.4] tracking-[0.15em] uppercase">

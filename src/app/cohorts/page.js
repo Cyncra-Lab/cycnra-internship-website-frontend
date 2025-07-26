@@ -8,7 +8,7 @@ import NavBar from "@/components/NavBar";
 
 const Cohort = () => {
   return (
-    <div>
+    <div className="w-full">
       <Hero />
       {/* <CohortInfo /> */}
       <ProjectsSection />

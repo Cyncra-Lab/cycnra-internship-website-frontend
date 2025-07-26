@@ -33,20 +33,20 @@ const projects = [
 const ProjectsSection = () => (
   <>
     <NavBar />
-    <section className="bg-[#02353C] flex flex-col items-center justify-center py-15 text-white px-20 w-full h-fit">
-      <div className="w-full sm:w-full text-white flex flex-col items-center justify-center mt-5">
-        <h1 className="text-[64px] text-center sm:text-[32px] sm:text-center font-bold mb-2 leading-[1.2]">
+    <section className="bg-[#02353C] flex flex-col items-center justify-center py-15 text-white px-4 sm:px-6 md:px-20 w-full h-fit">
+      <div className="w-full text-white flex flex-col items-center justify-center mt-5">
+        <h1 className="lg:text-[64px] text-center text-[32px] font-bold mb-2 leading-[1.2]">
           Frontend Development Cohort-Q1 2025
         </h1>
-        <h3 className="mb-2 leading-[1.4] text-[32px] sm:text-[28px] sm:text-center tracking-[0.05em] text-[#E6FAFCBD]">
+        <h3 className="mb-2 leading-[1.4] md:text-[30px] text-[28px] text-center tracking-[0.05em] text-[#E6FAFCBD]">
           July 2025 - August 2025
         </h3>
-        <h3 className="text-[32px] sm:text-[20px] sm:text-center tracking-[0.05em] font-normal mx-auto text-[#E6FAFCBD]">
+        <h3 className="md:text-[30px] text-[20px] text-center tracking-[0.05em] font-normal mx-auto text-[#E6FAFCBD]">
           Focused on building responsive and user-friendly web interfaces.
         </h3>
       </div>
 
-      <div className="w-full h-fit mt-20 px-20 pb-20">
+      <div className="w-full h-fit mt-20 px-4 sm:px-6 md:px-20 pb-20">
         <h3 className="text-[26px] font-semibold mb-6 leading-[1.2] flex items-center gap-4">
           <RiArrowRightLine /> Projects Worked On:
         </h3>
@@ -72,7 +72,7 @@ const ProjectsSection = () => (
                 <h6 className="w-[377px] text-[1rem] font-normal mb-2 tracking-[0.15em] leading-[1.4]">
                   {proj.subTitle}
                 </h6>
-                <p className="w-full text-[1rem] sm:text-[14px]  text-[#CCD6D8] font-normal mb-4 tracking-[-0.02em] leading-[1.4]">
+                <p className="w-full text-[1rem] text-[#CCD6D8] font-normal mb-4 tracking-[-0.02em] leading-[1.4]">
                   {proj.description}
                 </p>
                 <motion.button
