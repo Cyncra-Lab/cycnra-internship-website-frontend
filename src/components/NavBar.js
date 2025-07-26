@@ -6,8 +6,10 @@ import { HiX } from "react-icons/hi";
 import { RiMenu5Fill } from "react-icons/ri";
 import { useState } from "react";
 
+
 export default function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
+
 
   return (
     <header className="fixed top-10 left-1/2 transform -translate-x-1/2 w-[90%] max-w-[1200px] flex justify-between items-center bg-[var(--header-background)] rounded-[80px] px-7 py-5 z-30">

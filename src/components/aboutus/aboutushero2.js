@@ -31,7 +31,7 @@ const Aboutushero2 = () => {
   return (
     <>
       <section className="w-[100%]  flex justify-center mt-[40px] ">
-        <div className="w-[90%] h-[572px]  flex flex-col ">
+        <div className="w-[90%] sm:h-[572px] md:h-[625px]  h-[522px] flex flex-col ">
           <div className="flex lg:flex-row flex-col gap-[18px] lg:gap-0 lg:justify-between lg:items-center ">
             <p className="font-bold xl:text-[40px] lg:text-[32px] sm:text-[28px] text-[18px] lg:w-[474px] xl:w-[574px] sm:w-[100%] w-[90%] text-[#02353C] leading-[120%] ">
               Cyncra{" "}
@@ -40,7 +40,7 @@ const Aboutushero2 = () => {
               </span>{" "}
               <span className="text-[#FFC857] ">yours counts.</span>
             </p>
-            <p className="lg-w-[400px] lg:text-[20px] min-w-[231px] sm:text-[18px] text-[14px] leading-[120%] text-[#02353C] tracking-[5%] ">
+            <p className="lg:w-[400px] lg:text-[20px] min-w-[231px] sm:text-[18px] text-[14px] leading-[120%] text-[#02353C] tracking-[5%] ">
               Our internship helps you build skills, confidence and connections
               for a career that matters.
             </p>

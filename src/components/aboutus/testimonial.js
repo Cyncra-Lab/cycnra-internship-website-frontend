@@ -30,7 +30,7 @@ const Testimonial = () => {
       username: "Fatima Lawal",
       jobrole: "Software Engineer, NestPay",
       testimony:
-        "What set Cyncra apart for me was the structure. There was a clear path from learning to doing to becoming. The mentorship was exceptional — I wasn’t just taught, I was guided and challenged. That journey gave me the confidence to apply to competitive startups, and I got hired by a YC-backed company a few weeks after graduation.",
+        "What set Cyncra apart for me was the structure. There was a clear path from learning to doing to becoming. The mentorship was exceptional, I wasn’t just taught, I was guided and challenged. That journey gave me the confidence to apply to competitive startups, and I got hired by a YC-backed company a few weeks after graduation.",
     },
     {
       profileimage: image1,
@@ -73,30 +73,30 @@ const Testimonial = () => {
   return (
     <>
 
-      <section className="w-[100%]  lg:pl-40  flex justify-center about-bg items-center h-[720px]">
+      <section className="w-[100%] xl:pl-40 lg:pl-25  pl-10  md:pl-15 flex justify-center about-bg items-center h-[470px] md:h-[720px]">
         <motion.div
-          className="w-[100%]  h-[600px]  flex gap-[116px]"
+          className="w-[100%]  lg:h-[600px] md:h-[550px]   flex  flex-row lg:gap-[116px] gap-[30px]"
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 2 }}
           viewport={{ once: false }}
         >
 
-          <div className="w-[239px]  h-[348px] ">
-            <div className="flex justify-center items-center bg-[#02353C] w-[239px] h-[185px] ">
-              <Image src={quote} alt="left quote icon" />
+          <div className="lg:w-[239px] sm:w-[130px] w-[100px]  md:h-[348px] h-[250px]  ">
+            <div className="flex justify-center rounded-[5px] items-center bg-[#02353C] lg:h-[185px] sm:h-[130px] h-[80px]">
+              <Image src={quote} alt="left quote icon" className="sm:w-[50px] w-[30px] lg:w-auto" />
             </div>
-            <div className="w-[239px] h-[338px] flex flex-col gap-[5px] items-center  ">
-              <div className="flex gap-[15px] items-center ">
-                <Image src={thumbs} alt="thumbs up icon" />
-                <p className="text-[36px] font-bold  leading-[167%] text-[#02353C]">
+            <div className="w-[100%] h-[338px] flex flex-col gap-[5px] mt-[8px] md:mt-0 items-center  ">
+              <div className="flex lg:gap-[15px] gap-[5px] items-center ">
+                <Image src={thumbs} alt="thumbs up icon"  className="w-[15px] lg:w-auto"/>
+                <p className="lg:text-[36px] sm:text-[18px] text-[14px] font-bold  leading-[167%] text-[#02353C]">
                   Testimonial
                 </p>
               </div>
               <Rating rating={5} />
               <div className="flex mt-[8px] items-center ">
                 <button onClick={() => scroll("left")} aria-label="Scroll Left">
-                  <ChevronLeft size={20} color="black" />
+                  <ChevronLeft size={20} color="black " />
                 </button>
                 <button
                   onClick={() => scroll("right")}
@@ -111,12 +111,12 @@ const Testimonial = () => {
 
           <div
             ref={carouselRef}
-            className="flex-1 bg-[#02353C] h-[600px] flex items-center justify-start gap-[24px] px-[40px] rounded-tl-[30px] rounded-bl-[30px] overflow-x-auto scroll-smooth  no-scrollbar transition-all duration-300"
+            className="md:flex-1 bg-[#02353C] lg:h-[600px] md:h-[500px] h-[400px] flex items-center justify-start gap-[24px] px-[40px]  rounded-tl-[30px] rounded-bl-[30px] overflow-x-auto scroll-smooth  no-scrollbar transition-all duration-300"
           >
             {testimonies.map((testimony, index) => (
               <div
                 key={index}
-                className="min-w-[600px] h-[288px]  bg-white rounded-[10px] p-[40px] flex-shrink-0"
+                className="md:w-[600px] w-[450px] h-[288px]   bg-white rounded-[10px] md:p-[40px] p-[20px] flex-shrink-0"
               >
                 <div className="grid w-full grid-cols-[50px_1fr] gap-[15px]">
                   <Image src={testimony.profileimage} alt="image" />
@@ -128,7 +128,7 @@ const Testimonial = () => {
                       {testimony.jobrole}
                     </p>
                   </div>
-                  <p className="w-[520px] text-[16px] text-[#02353C] mt-[24px]">
+                  <p className="w-[520px] md:text-[16px] text-[12px] text-[#02353C] mt-[24px]">
                     {testimony.testimony}
                   </p>
                 </div>
