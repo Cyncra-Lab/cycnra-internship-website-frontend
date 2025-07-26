@@ -34,14 +34,14 @@ const ProjectsSection = () => (
   <>
     <NavBar />
     <section className="bg-[#02353C] flex flex-col items-center justify-center py-15 text-white px-20 w-full h-fit">
-      <div className="w-full text-white flex flex-col items-center justify-center mt-5">
-        <h1 className="text-[64px] font-bold mb-2 leading-[1.2]">
+      <div className="w-full sm:w-full text-white flex flex-col items-center justify-center mt-5">
+        <h1 className="text-[64px] text-center sm:text-[32px] sm:text-center font-bold mb-2 leading-[1.2]">
           Frontend Development Cohort-Q1 2025
         </h1>
-        <h3 className="mb-2 leading-[1.4] text-[32px] tracking-[0.05em] text-[#E6FAFCBD]">
+        <h3 className="mb-2 leading-[1.4] text-[32px] sm:text-[28px] sm:text-center tracking-[0.05em] text-[#E6FAFCBD]">
           July 2025 - August 2025
         </h3>
-        <h3 className="text-[32px] tracking-[0.05em] font-normal mx-auto text-[#E6FAFCBD]">
+        <h3 className="text-[32px] sm:text-[20px] sm:text-center tracking-[0.05em] font-normal mx-auto text-[#E6FAFCBD]">
           Focused on building responsive and user-friendly web interfaces.
         </h3>
       </div>
@@ -50,13 +50,13 @@ const ProjectsSection = () => (
         <h3 className="text-[26px] font-semibold mb-6 leading-[1.2] flex items-center gap-4">
           <RiArrowRightLine /> Projects Worked On:
         </h3>
-        <div className="grid md:grid-cols-3 gap-[2rem] w-full h-fit">
+        <div className="grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 gap-[2rem] w-full h-fit">
           {projects.map((proj, index) => (
             <div
               key={index}
-              className="w-full max-w-[455px] bg-[#02353C] text-white-100 rounded-3xl pb-8 border border-white/20"
+              className="w-full bg-[#02353C] text-white-100 rounded-3xl pb-8 border border-white/20"
             >
-              <div className="w-full max-w-[455px]">
+              <div className="w-full">
                 <Image
                   src={proj.img}
                   alt={proj.title}
@@ -72,14 +72,11 @@ const ProjectsSection = () => (
                 <h6 className="w-[377px] text-[1rem] font-normal mb-2 tracking-[0.15em] leading-[1.4]">
                   {proj.subTitle}
                 </h6>
-                <p className="w-full text-[1rem] text-[#CCD6D8] font-normal mb-4 tracking-[-0.02em] leading-[1.4]">
+                <p className="w-full text-[1rem] sm:text-[14px]  text-[#CCD6D8] font-normal mb-4 tracking-[-0.02em] leading-[1.4]">
                   {proj.description}
                 </p>
-                {/* <button className="w-[195px] h-fit flex items-center justify-center gap-[10px] bg-[#FFC857] text-black p-[10px] mb-4 rounded-[70px] hover:bg-[#f4c86e] cursor-pointer">
-                  View Project <FaArrowRight />
-                </button> */}
                 <motion.button
-                  className="w-[195px] h-fit flex items-center justify-center gap-[10px] bg-[#FFC857] text-black p-[10px] mb-4 rounded-[70px] hover:bg-[#f4c86e] cursor-pointer"
+                  className="w-[195px] sm:w-[120px] h-fit flex items-center justify-center gap-[10px] bg-[#FFC857] text-black text-[12px] p-[10px] p-[8px] mb-4 rounded-[70px] sm:rounded-[40px] hover:bg-[#f4c86e] cursor-pointer"
                   whileHover={{
                     scale: 1.05,
                     y: -2,

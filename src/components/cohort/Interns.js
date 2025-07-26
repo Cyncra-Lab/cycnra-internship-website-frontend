@@ -68,10 +68,11 @@ const Interns = () => {
       </h3>
 
       <div className="px-20">
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-10 gap-4">
-          <h3 className="text-[36px] leading-[1.4] tracking-[-0.02em] text-[#02353C] font-bold">
+        <div className="flex flex-col md:flex-col justify-between items-start md:items-center mb-10 gap-4">
+          <h3 className="text-[36px] md:text-[24px] leading-[1.4] tracking-[-0.02em] text-[#02353C] font-bold">
             Engage with Our
-            <br /> Creative Team
+            <br className="block md:hidden" />
+            <span className="md:inline">Creative Team</span>
           </h3>
           <p className="text-[21px] leading-[1.4] tracking-[-0.02em] text-[#02353C] max-w-md text-sm text-left font-normal">
             Meet our talented and dedicated <br /> cohort members and their
@@ -83,14 +84,14 @@ const Interns = () => {
         <div className="relative flex flex-col items-center justify-center">
           <div
             ref={sliderRef}
-            className="flex gap-6 overflow-x-auto scroll-smooth no-scrollbar pb-4"
+            className="flex gap-6 overflow-x-auto overflow-y-hidden scroll-smooth pb-4 w-full max-w-full no-scrollbar"
           >
             {interns.map((member, idx) => (
               <div
                 key={idx}
-                className="w-fit h-fit max-w-[344px] bg-[#02353C] text-white rounded-[12px] shadow-md flex-shrink-0"
+                className="w-[90vw] sm:w-[90vw] md:w-[90vw] lg:w-[344px] min-h-[420px] max-w-[344px] bg-[#02353C] text-white rounded-[12px] shadow-md flex-shrink-0"
               >
-                <div className="w-[264px] h-fit px-[40px] py-[32px]">
+                <div className="w-full h-full px-[40px] py-[32px]">
                   <Image
                   src={member.img}
                   alt={member.name}
