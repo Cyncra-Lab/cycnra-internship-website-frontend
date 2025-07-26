@@ -8,7 +8,7 @@ const Rating = ({ rating }) => {
         {Array.from({ length: totalStars }, (_, i) => (
           <Star
             key={i}
-            size={24}
+            className="lg:w-[24px] sm:w-[16px] w-[12px]"
             fill={i < rating ? "gold" : "none"}
             stroke={i < rating ? "gold" : "gray"}
           />
